@@ -2,7 +2,9 @@
 
 [![Nhat Vu's github stats](https://github-readme-stats.vercel.app/api?username=nhatvu148&count_private=true&show_icons=true&theme=tokyonight)](https://github.com/nhatvu148?tab=repositories)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nhatvu148&hide=go,rust&show_icons=true&theme=dracula)](https://github.com/nhatvu148?tab=repositories)
-<a href="http://guestscounter.com"><img src="http://guestscounter.com/count.php?c_style=100&id=1595647518" border=0 alt="free hits counter"></a><br><a href="http://guestscounter.com" style="font-size:9px;">free hits counter</a><br>
+<a href="http://guestscounter.com">
+  <img src="http://guestscounter.com/count.php?c_style=100&id=1595647518" border=0 alt="free hits counter"/>
+<a href="http://guestscounter.com" style="font-size:9px;"/>
 <!--
 **nhatvu148/nhatvu148** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
