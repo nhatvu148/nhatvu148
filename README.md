@@ -2,7 +2,7 @@
 
 [![Nhat Vu's github stats](https://github-readme-stats.vercel.app/api?username=nhatvu148&count_private=true&show_icons=true&theme=tokyonight)](https://github.com/nhatvu148?tab=repositories)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nhatvu148&hide=go,rust&show_icons=true&theme=dracula)](https://github.com/nhatvu148?tab=repositories)
-
+![image](https://github.com/nhatvu148/nhatvu148/blob/master/mydino.gif)
 <!--
 **nhatvu148/nhatvu148** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
