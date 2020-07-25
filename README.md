@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-[![Nhat Vu's github stats](https://github-readme-stats.vercel.app/api?username=nhatvu148&count_private=true&show_icons=true&theme=tokyonight&hide=prs,issues)](https://github.com/nhatvu148)
+[![Nhat Vu's github stats](https://github-readme-stats.vercel.app/api?username=nhatvu148&count_private=true&show_icons=true&theme=tokyonight)](https://github.com/nhatvu148)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nhatvu148&hide=go,rust&show_icons=true&theme=dracula)](https://github.com/nhatvu148)
 
 <!--
