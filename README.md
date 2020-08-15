@@ -1,5 +1,6 @@
 ### Hi there! Welcome to my Github page! 👋👋👋
 
+[![Nhat Vu's DEV Profile](https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg)](https://dev.to/nhatvu148)
 ![image](https://github.com/nhatvu148/nhatvu148/blob/master/mydino.gif)
 <!--
 **nhatvu148/nhatvu148** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
