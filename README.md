@@ -22,7 +22,7 @@
 <img align="left" alt="JavaScript" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" />
 <img align="left" alt="TypeScript" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" />
 <img align="left" alt="C#" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/C_Sharp_logo.svg" />
-<img align="left" alt="Go" width="52px" src="https://commons.wikimedia.org/wiki/File:Go_Logo_Blue.svg" />
+<img align="left" alt="Go" width="52px" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg" />
 <img align="left" alt="Visual Studio" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/5/59/Visual_Studio_Icon_2019.svg" />
 <img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
 <img align="left" alt="MongoDB" width="52px" src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" />
@@ -36,7 +36,7 @@
 ### GitHub Stats
 
 <a href="https://github.com/nhatvu148/nhatvu148">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nhatvu148&hide=cpp,python,html&title_color=000000&text_color=000000&icon_color=000000&bg_color=ffffff" alt="Nhat Vu's GitHub Stats"/>
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nhatvu148&hide=python,html&title_color=000000&text_color=000000&icon_color=000000&bg_color=ffffff" alt="Nhat Vu's GitHub Stats"/>
 </a>
 <a href="https://github.com/nhatvu148/nhatvu148">
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=nhatvu148&show_icons=true&line_height=27&count_private=true&title_color=000000&text_color=000000&icon_color=000000&bg_color=ffffff" alt="Nhat Vu's GitHub Stats" />
