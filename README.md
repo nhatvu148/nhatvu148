@@ -15,9 +15,9 @@
 [linkedin]: https://www.linkedin.com/in/van-nhat-vu-nguyen/
 [instagram]: https://www.instagram.com/vu_nhat_nv/
 [facebook]: https://www.facebook.com/vugeengeld/
--->
 
 <br />
+-->
 
 ### Languages and Tools:
 
