@@ -1,6 +1,7 @@
 ### Hi there! Welcome to my Github page! 👋👋👋
 ### <p style="float:left"><img src="https://visitor-badge.glitch.me/badge?page_id=nhatvu148.nhatvu148" alt="visitors"></p>
 
+<!--
 ### Contact me:
 
 [<img align="left" alt="dataalliance.io" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
@@ -14,6 +15,7 @@
 [linkedin]: https://www.linkedin.com/in/van-nhat-vu-nguyen/
 [instagram]: https://www.instagram.com/vu_nhat_nv/
 [facebook]: https://www.facebook.com/vugeengeld/
+-->
 
 <br />
 
