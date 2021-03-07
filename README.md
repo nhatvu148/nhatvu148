@@ -19,7 +19,7 @@
 <br />
 -->
 
-### Languages and Tools:
+### Languages and Tools that I frequently use:
 
 <img align="left" alt="JavaScript" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" />
 <img align="left" alt="TypeScript" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" />
@@ -38,7 +38,7 @@
 <br />
 <br />
 
-### GitHub Stats
+### My GitHub Stats:
 
 <a href="https://github.com/nhatvu148/nhatvu148">
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nhatvu148&hide=python,html&title_color=000000&text_color=000000&icon_color=000000&bg_color=ffffff" alt="Nhat Vu's GitHub Stats"/>
