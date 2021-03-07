@@ -33,7 +33,7 @@
 <img align="left" alt="MongoDB" width="60px" src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" />
 <img align="left" alt="MySQL" width="40px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png" />
 <img align="left" alt="Git" width="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />
-<img align="left" alt="GitHub" width="30px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
+<img align="left" alt="Github" width="30px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
 
 <br />
 <br />
@@ -44,7 +44,7 @@
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nhatvu148&hide=python,html&title_color=000000&text_color=000000&icon_color=000000&bg_color=ffffff" alt="Nhat Vu's Github Stats"/>
 </a>
 <a href="https://github.com/nhatvu148/nhatvu148">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=nhatvu148&show_icons=true&line_height=27&count_private=true&title_color=000000&text_color=000000&icon_color=000000&bg_color=ffffff" alt="Nhat Vu's GitHub Stats" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=nhatvu148&show_icons=true&line_height=27&count_private=true&title_color=000000&text_color=000000&icon_color=000000&bg_color=ffffff" alt="Nhat Vu's Github Stats" />
 </a>
 
 
