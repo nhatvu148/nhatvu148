@@ -41,7 +41,7 @@
 ### My Github Stats:
 
 <a href="https://github.com/nhatvu148/nhatvu148">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nhatvu148&hide=python,html&title_color=000000&text_color=000000&icon_color=000000&bg_color=ffffff" alt="Nhat Vu's GitHub Stats"/>
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nhatvu148&hide=python,html&title_color=000000&text_color=000000&icon_color=000000&bg_color=ffffff" alt="Nhat Vu's Github Stats"/>
 </a>
 <a href="https://github.com/nhatvu148/nhatvu148">
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=nhatvu148&show_icons=true&line_height=27&count_private=true&title_color=000000&text_color=000000&icon_color=000000&bg_color=ffffff" alt="Nhat Vu's GitHub Stats" />
