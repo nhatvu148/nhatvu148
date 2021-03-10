@@ -26,7 +26,7 @@
 <img align="left" alt="C#" width="27px" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/C_Sharp_logo.svg" />
 <img align="left" alt="C++" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" />
 <img align="left" alt="Lua" width="36px" src="https://www.lua.org/images/lua-logo.gif" />
-<img align="left" alt="Scala" width="52px" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Scala-full-color.svg" />
+<img align="left" alt="Scala" width="60px" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Scala-full-color.svg" />
 <img align="left" alt="Go" width="52px" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg" />
 <img align="left" alt="Python" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" />
 <img align="left" alt="Visual Studio" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/5/59/Visual_Studio_Icon_2019.svg" />
