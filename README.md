@@ -1,4 +1,4 @@
-### Hi there! Welcome to my Github page! 👋👋👋
+### Hi there! Welcome to my GitHub page! 👋👋👋
 ### <p style="float:left"><img src="https://visitor-badge.glitch.me/badge?page_id=nhatvu148.nhatvu148" alt="visitors"></p>
 
 <!--
@@ -19,7 +19,7 @@
 <br />
 -->
 
-### Languages and Tools that I frequently use:
+### Languages and Tools:
 
 <img align="left" alt="JavaScript" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" />
 <img align="left" alt="TypeScript" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" />
@@ -39,7 +39,7 @@
 <br />
 <br />
 
-### My Github Stats:
+### GitHub Stats:
 
 <a href="https://github.com/nhatvu148/nhatvu148">
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nhatvu148&hide=html&layout=compact&title_color=000000&text_color=000000&icon_color=000000&bg_color=ffffff" alt="Nhat Vu's Github Stats"/>
