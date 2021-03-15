@@ -19,7 +19,7 @@
 <br />
 -->
 
-### Languages and Tools:
+### Favorite Languages and Tools:
 
 <img align="left" alt="JavaScript" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" />
 <img align="left" alt="TypeScript" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" />
