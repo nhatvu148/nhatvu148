@@ -23,7 +23,7 @@
 
 <img align="left" alt="JavaScript" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" />
 <img align="left" alt="TypeScript" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" />
-<img align="left" alt="C#" width="27px" src="https://commons.wikimedia.org/wiki/Category:C_Sharp#/media/File:C-Sharp.png" />
+<img align="left" alt="C#" width="27px" src="https://commons.wikimedia.org/wiki/File:C_Sharp_wordmark.svg" />
 <img align="left" alt="C++" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" />
 <img align="left" alt="Lua" width="36px" src="https://www.lua.org/images/lua-logo.gif" />
 <img align="left" alt="Scala" width="60px" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Scala-full-color.svg" />
