@@ -26,8 +26,6 @@
 <img align="left" alt="C#" width="27px" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/C_Sharp_wordmark.svg" />
 <img align="left" alt="C++" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" />
 <img align="left" alt="Lua" width="36px" src="https://www.lua.org/images/lua-logo.gif" />
-<img align="left" alt="Scala" width="60px" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Scala-full-color.svg" />
-<img align="left" alt="Go" width="52px" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg" />
 <img align="left" alt="Redis" width="60px" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Redis_Logo.svg" />
 <img align="left" alt="MySQL" width="40px" src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" />
 <img align="left" alt="Docker" width="55px" src="https://raw.githubusercontent.com/docker-library/docs/c350af05d3fac7b5c3f6327ac82fe4d990d8729c/docker/logo.png" />
