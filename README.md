@@ -19,12 +19,13 @@
 <br />
 -->
 
-### Favorite Languages and Tools:
+### Languages and Tools:
 
 <img align="left" alt="JavaScript" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" />
 <img align="left" alt="TypeScript" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" />
 <img align="left" alt="C#" width="27px" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/C_Sharp_wordmark.svg" />
 <img align="left" alt="C++" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" />
+<img align="left" alt="Python" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" />
 <img align="left" alt="Redis" width="60px" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Redis_Logo.svg" />
 <img align="left" alt="MySQL" width="40px" src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" />
 <img align="left" alt="Docker" width="55px" src="https://raw.githubusercontent.com/docker-library/docs/c350af05d3fac7b5c3f6327ac82fe4d990d8729c/docker/logo.png" />
