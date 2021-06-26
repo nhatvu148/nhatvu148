@@ -39,6 +39,8 @@
 <br />
 <br />
 
+<img src="https://github.com/nhatvu148/nhatvu148/blob/master/images/stat.svg" alt="Nhat Vu WakaTime Activity"/>
+
 ### GitHub Stats:
 
 <a href="https://github.com/nhatvu148/nhatvu148">
