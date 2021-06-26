@@ -57,7 +57,7 @@
 
 <!--[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=JupiterUIRecorder)](https://github.com/nhatvu148/JupiterUIRecorder)-->
 
-<!-- ![image](https://github.com/nhatvu148/nhatvu148/blob/master/mydino.gif) -->
+![image](https://github.com/nhatvu148/nhatvu148/blob/master/images/mydino.gif)
 <!--[![Nhat Vu's DEV Profile](https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg)](https://dev.to/nhatvu148)
 **nhatvu148/nhatvu148** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
