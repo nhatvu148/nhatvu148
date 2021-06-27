@@ -2,24 +2,6 @@
 <!-- <img src="images/shiba.gif" width=30%><img src="images/shiba.gif" width=30%><img src="images/shiba.gif" width=30%> -->
 ### <p style="float:left"><img src="https://visitor-badge.glitch.me/badge?page_id=nhatvu148.nhatvu148" alt="visitors"></p>
 
-<!--
-### Contact me:
-
-[<img align="left" alt="dataalliance.io" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
-[<img align="left" alt="codeSTACKr | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
-[<img align="left" alt="codeSTACKr | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-[<img align="left" alt="codeSTACKr | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
-[<img align="left" alt="codeSTACKr | Facebook" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/facebook.svg" />][facebook]
-
-[website]: http://nhatvuscorner.xyz/
-[twitter]: https://twitter.com/nhatvu148
-[linkedin]: https://www.linkedin.com/in/van-nhat-vu-nguyen/
-[instagram]: https://www.instagram.com/vu_nhat_nv/
-[facebook]: https://www.facebook.com/vugeengeld/
-
-<br />
--->
-
 ### Languages and Tools:
 
 <img align="left" alt="JavaScript" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" />
@@ -46,13 +28,13 @@
 
 ### GitHub Stats:
 
-<a href="https://github.com/nhatvu148/nhatvu148">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nhatvu148&hide=html&layout=compact&title_color=000000&text_color=000000&icon_color=000000&bg_color=ffffff" alt="Nhat Vu's Github Stats"/>
-</a>
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=nhatvu148&theme=tokyonight)](https://profile-summary-for-github.com/user/nhatvu148)
 
-<a href="https://github.com/nhatvu148/nhatvu148">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=nhatvu148&hide=contribs,prs&show_icons=true&line_height=27&count_private=true&title_color=000000&text_color=000000&icon_color=000000&bg_color=ffffff" alt="Nhat Vu's Github Stats" />
-</a>
+
+<p>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nhatvu148&show_icons=true&layout=compact&cache_seconds=1800&langs_count=8&theme=blueberry&count_private=true&show_icons=true" width=40% height="204px"/>
+<img src="https://github-readme-stats.vercel.app/api?username=nhatvu148&count_private=true&show_icons=true&theme=blueberry" width=55% height="204px"/>
+</p>
 
 ### Extra Pins
 
@@ -67,21 +49,3 @@
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=lua-compile&theme=blueberry)](https://github.com/nhatvu148/lua-compile)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=Net5React&theme=blueberry)](https://github.com/nhatvu148/Net5React)
-
-<!--[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=JupiterUIRecorder)](https://github.com/nhatvu148/JupiterUIRecorder)-->
-
-<!-- ![image](https://github.com/nhatvu148/nhatvu148/blob/master/images/mydino.gif) -->
-<!--[![Nhat Vu's DEV Profile](https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg)](https://dev.to/nhatvu148)
-**nhatvu148/nhatvu148** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
