@@ -28,11 +28,11 @@
 
 ### GitHub Stats:
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=nhatvu148&theme=tokyonight)](https://profile-summary-for-github.com/user/nhatvu148)
+<!-- [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=nhatvu148&theme=tokyonight)](https://profile-summary-for-github.com/user/nhatvu148) -->
 
 <p>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nhatvu148&show_icons=true&layout=compact&cache_seconds=1800&langs_count=8&theme=blueberry&count_private=true&show_icons=true" width=40% height="204px"/>
-<img src="https://github-readme-stats.vercel.app/api?username=nhatvu148&count_private=true&show_icons=true&theme=blueberry" width=55% height="204px"/>
+<img src="https://github-readme-streak-stats.herokuapp.com?user=nhatvu148&theme=tokyonight" width=55% height="204px"/>
 </p>
 
 ### Extra Pins
