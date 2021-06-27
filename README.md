@@ -54,6 +54,20 @@
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=nhatvu148&hide=contribs,prs&show_icons=true&line_height=27&count_private=true&title_color=000000&text_color=000000&icon_color=000000&bg_color=ffffff" alt="Nhat Vu's Github Stats" />
 </a>
 
+### Extra Pins
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=helpers&theme=blueberry)](https://github.com/nhatvu148/helpers)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=deno-learn&theme=blueberry)](https://github.com/nhatvu148/deno-learn)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=linux-commands&theme=blueberry)](https://github.com/nhatvu148/linux-commands)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=k8s&theme=blueberry)](https://github.com/nhatvu148/k8s)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=WpfDataBinding&theme=blueberry)](https://github.com/nhatvu148/WpfDataBinding)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=DllImporting&theme=blueberry)](https://github.com/nhatvu148/DllImporting)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=lua-compile&theme=blueberry)](https://github.com/nhatvu148/lua-compile)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=Net5React&theme=blueberry)](https://github.com/nhatvu148/Net5React)
+
 <!--[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=JupiterUIRecorder)](https://github.com/nhatvu148/JupiterUIRecorder)-->
 
 <!-- ![image](https://github.com/nhatvu148/nhatvu148/blob/master/images/mydino.gif) -->
