@@ -4,21 +4,23 @@
 
 ### Languages and Tools:
 
-<img align="left" alt="JavaScript" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" />
-<img align="left" alt="TypeScript" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" />
-<img align="left" alt="C#" width="27px" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/C_Sharp_wordmark.svg" />
-<img align="left" alt="C++" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" />
-<img align="left" alt="Go" width="50px" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg" />
-<img align="left" alt="Python" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" />
-<img align="left" alt="Rust" width="50px" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" />
-<img align="left" alt="Redis" width="60px" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Redis_Logo.svg" />
-<img align="left" alt="MySQL" width="40px" src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" />
-<img align="left" alt="Docker" width="55px" src="https://raw.githubusercontent.com/docker-library/docs/c350af05d3fac7b5c3f6327ac82fe4d990d8729c/docker/logo.png" />
-<img align="left" alt="Visual Studio" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/5/59/Visual_Studio_Icon_2019.svg" />
-<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
-<img align="left" alt="Git" width="50px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />
-<img align="left" alt="Github" width="30px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
-<img align="left" alt="Gitlab" width="70px" src="https://upload.wikimedia.org/wikipedia/commons/e/e1/GitLab_logo.svg" />
+<img align="left" alt="JavaScript" width="26px" src="images/JavaScript-logo.png" />
+<img align="left" alt="TypeScript" width="26px" src="images/Typescript_logo_2020.svg" />
+<img align="left" alt="C#" width="26px" src="images/c-sharp.png" />
+<img align="left" alt="C++" width="24px" src="images/ISO_C++_Logo.svg" />
+<img align="left" alt="Go" width="35px" src="images/muscles-clipart-ghoper.gif" />
+<img align="left" alt="Rust" width="40px" src="images/rustacean-flat-happy.svg" />
+<img align="left" alt="Python" width="24px" src="images/Python-logo-notext.svg" />
+<img align="left" alt="Redis" width="35px" src="images/redis-logo.png" />
+<img align="left" alt="MySQL" width="27px" src="images/mysql_logo-300x300.png" />
+<img align="left" alt="PostgreSQL" width="27px" src="images/postgresql-icon.svg" />
+<img align="left" alt="Docker" width="35px" src="images/4844483.png" />
+<img align="left" alt="Kubernetes" width="32px" src="images/4569637.png" />
+<img align="left" alt="Visual Studio" width="26px" src="images/Visual_Studio_Icon_2019.svg" />
+<img align="left" alt="Visual Studio Code" width="26px" src="images/Visual_Studio_Code_1.35_icon.svg" />
+<img align="left" alt="Git" width="30px" src="images/Git_icon.svg.png" />
+<img align="left" alt="Github" width="30px" src="images/25231.svg" />
+<img align="left" alt="Gitlab" width="30px" src="images/gitlab-logo-png-transparent.png" />
 
 <br />
 <br />
