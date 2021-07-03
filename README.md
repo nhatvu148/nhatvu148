@@ -9,6 +9,7 @@
 <img align="left" alt="C#" width="27px" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/C_Sharp_wordmark.svg" />
 <img align="left" alt="C++" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" />
 <img align="left" alt="Go" width="50px" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg" />
+<img align="left" alt="Python" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" />
 <img align="left" alt="Rust" width="50px" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" />
 <img align="left" alt="Redis" width="60px" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Redis_Logo.svg" />
 <img align="left" alt="MySQL" width="40px" src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" />
