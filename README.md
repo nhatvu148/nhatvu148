@@ -54,3 +54,9 @@
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=grpc-csharp&theme=blueberry)](https://github.com/nhatvu148/grpc-csharp)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=Net5React&theme=blueberry)](https://github.com/nhatvu148/Net5React)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=simplebank&theme=blueberry)](https://github.com/nhatvu148/simplebank)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=Hands-On-Systems-Programming-with-Rust&theme=blueberry)](https://github.com/nhatvu148/Hands-On-Systems-Programming-with-Rust)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=invaders&theme=blueberry)](https://github.com/nhatvu148/invaders)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=ultimate_rust_crash_course&theme=blueberry)](https://github.com/nhatvu148/ultimate_rust_crash_course)
