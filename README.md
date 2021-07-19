@@ -6,13 +6,13 @@
 ### Languages and Tools:
 
 <div align="center">
-<img title="JavaScript" alt="JavaScript" width="26px" src="images/JavaScript-logo.png" />&nbsp;&nbsp;
+<!-- <img title="JavaScript" alt="JavaScript" width="26px" src="images/JavaScript-logo.png" />&nbsp;&nbsp; -->
 <img title="TypeScript" alt="TypeScript" width="26px" src="images/Typescript_logo_2020.svg" />&nbsp;&nbsp;
 <img title="C#" alt="C#" width="26px" src="images/c-sharp.png" />&nbsp;&nbsp;
-<img title="C++" alt="C++" width="24px" src="images/ISO_C++_Logo.svg" />&nbsp;&nbsp;
+<!-- <img title="C++" alt="C++" width="24px" src="images/ISO_C++_Logo.svg" />&nbsp;&nbsp; -->
 <img title="Go" alt="Go" width="35px" src="images/muscles-clipart-ghoper.gif" />&nbsp;&nbsp;
 <img title="Rust" alt="Rust" width="40px" src="images/rustacean-flat-happy.svg" />&nbsp;&nbsp;
-<img title="Python" alt="Python" width="24px" src="images/Python-logo-notext.svg" />&nbsp;&nbsp;
+<!-- <img title="Python" alt="Python" width="24px" src="images/Python-logo-notext.svg" />&nbsp;&nbsp; -->
 <img title="Redis" alt="Redis" width="35px" src="images/redis-logo.png" />&nbsp;&nbsp;
 <img title="MySQL" alt="MySQL" width="27px" src="images/mysql_logo-300x300.png" />&nbsp;&nbsp;
 <img title="PostgreSQL" alt="PostgreSQL" width="27px" src="images/postgresql-icon.svg" />&nbsp;&nbsp;
