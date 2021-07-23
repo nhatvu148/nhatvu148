@@ -6,7 +6,7 @@
 ### Languages and Tools:
 
 <div align="center">
-<!-- <img title="JavaScript" alt="JavaScript" width="26px" src="images/JavaScript-logo.png" />&nbsp;&nbsp; -->
+<img title="JavaScript" alt="JavaScript" width="26px" src="images/JavaScript-logo.png" />&nbsp;&nbsp;
 <img title="TypeScript" alt="TypeScript" width="26px" src="images/Typescript_logo_2020.svg" />&nbsp;&nbsp;
 <img title="C#" alt="C#" width="26px" src="images/c-sharp.png" />&nbsp;&nbsp;
 <!-- <img title="C++" alt="C++" width="24px" src="images/ISO_C++_Logo.svg" />&nbsp;&nbsp; -->
