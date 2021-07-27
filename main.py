@@ -7,9 +7,11 @@ import sys
 import matplotlib.pyplot as plt
 import numpy as np
 import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 waka_key = os.getenv("INPUT_WAKATIME_API_KEY")
-
 
 def this_week(dates: list) -> str:
     """Returns a week streak"""
@@ -22,7 +24,7 @@ def this_week(dates: list) -> str:
 def make_graph(data: list):
     """Make progress graph from API graph"""
     fig, ax = plt.subplots(figsize=(10, 2))
-    with open("/colors.json") as json_file:
+    with open("colors.json") as json_file:
         color_data = json.load(json_file)
     y_pos = np.arange(len(data[0]))
     bars = ax.barh(y_pos, data[2])
@@ -51,7 +53,7 @@ def make_graph(data: list):
             ha="left",
             color="#586069"
         )
-    plt.savefig("stat.svg", bbox_inches="tight", transparent=True)
+    plt.savefig("images/stat.svg", bbox_inches="tight", transparent=True)
     print("new image generated")
 
 
@@ -87,4 +89,4 @@ def get_stats() -> list:
 if __name__ == "__main__":
     waka_stat = get_stats()
     make_graph(waka_stat)
-    print("python script run successful")
+    print("python script run successfully")
