@@ -41,7 +41,7 @@
 <img src="https://github-readme-streak-stats.herokuapp.com?user=nhatvu148&theme=tokyonight" width=55% height="204px"/>
 </p>
  -->
-### Extra Pins
+<!-- ### Extra Pins -->
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=helpers&theme=blueberry)](https://github.com/nhatvu148/helpers)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=deno-learn&theme=blueberry)](https://github.com/nhatvu148/deno-learn)
