@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to my GitHub page! 😁😁😁</h1>
+<h1 align="center">Welcome to my GitHub page!</h1>
 
 <!-- <img src="images/shiba.gif" width=30%><img src="images/shiba.gif" width=30%><img src="images/shiba.gif" width=30%> -->
 <p style="float:left"><img src="https://visitor-badge.glitch.me/badge?page_id=nhatvu148.nhatvu148" alt="visitors"></p>
@@ -37,7 +37,7 @@
 <!-- [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=nhatvu148&theme=tokyonight)](https://profile-summary-for-github.com/user/nhatvu148) -->
 
 <p>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nhatvu148&show_icons=true&layout=compact&cache_seconds=1800&langs_count=8&theme=blueberry&count_private=true&show_icons=true" width=40% height="204px"/>
+<!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nhatvu148&show_icons=true&layout=compact&cache_seconds=1800&langs_count=8&theme=blueberry&count_private=true&show_icons=true" width=40% height="204px"/> -->
 <img src="https://github-readme-streak-stats.herokuapp.com?user=nhatvu148&theme=tokyonight" width=55% height="204px"/>
 </p>
 
