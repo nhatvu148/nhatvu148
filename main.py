@@ -9,9 +9,9 @@ import numpy as np
 import requests
 from dotenv import load_dotenv
 
-# load_dotenv()
+load_dotenv()
 
-waka_key = os.getenv("WAKATIME_API_KEY")
+waka_key = os.getenv("INPUT_WAKATIME_API_KEY")
 
 def this_week(dates: list) -> str:
     """Returns a week streak"""
