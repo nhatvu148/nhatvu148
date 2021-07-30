@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 
 # load_dotenv()
 
-waka_key = os.getenv("INPUT_WAKATIME_API_KEY")
+waka_key = "585f767a-9855-42ec-a2c4-b587b462b85d"
 
 def this_week(dates: list) -> str:
     """Returns a week streak"""
