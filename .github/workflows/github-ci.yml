@@ -31,6 +31,4 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run main.py
       run: |
-        python main.py
-      env:
-        WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+        WAKATIME_API_KEY="585f767a-9855-42ec-a2c4-b587b462b85d" && python main.py
