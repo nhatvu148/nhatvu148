@@ -32,3 +32,5 @@ jobs:
     - name: Run main.py
       run: |
         python main.py
+      env:
+        INPUT_WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
