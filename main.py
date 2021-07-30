@@ -9,7 +9,7 @@ import numpy as np
 import requests
 from dotenv import load_dotenv
 
-load_dotenv()
+# load_dotenv()
 
 waka_key = os.getenv("INPUT_WAKATIME_API_KEY")
 
