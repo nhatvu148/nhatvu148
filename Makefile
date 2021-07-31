@@ -11,8 +11,10 @@ define create-venv
 python3 -m venv venv
 endef
 
+.PHONY: all
 all: clean venv run
 
+.PHONY: venv
 venv:
 	@$(create-venv)
 	@$(PIP) install -r requirements.txt
