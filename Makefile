@@ -20,9 +20,9 @@ venv:
 	@$(PIP) install -r requirements.txt
 
 git:
-	git add .
-	git commit -m "update svg"
-	git push origin master
+	$@ add .
+	$@ commit -m "update svg"
+	$@ push origin master
 
 freeze: venv
 	@$(PIP) freeze > requirements.txt
