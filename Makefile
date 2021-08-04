@@ -35,3 +35,9 @@ clean:
 
 uninstall:
 	@python3 -m pip freeze | xargs python3 -m pip uninstall -y
+
+%.gz: %
+	gzip $<
+
+%.unzip: %
+	gzip -d $<
