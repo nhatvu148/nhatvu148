@@ -19,6 +19,11 @@ venv:
 	@$(create-venv)
 	@$(PIP) install -r requirements.txt
 
+git:
+	git add .
+	git commit -m "update svg"
+	git push origin master
+
 freeze: venv
 	@$(PIP) freeze > requirements.txt
 
