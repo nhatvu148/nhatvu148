@@ -12,7 +12,7 @@ python3 -m venv venv
 endef
 
 .PHONY: all
-all: clean venv run
+all: clean venv run git
 
 .PHONY: venv
 venv:
