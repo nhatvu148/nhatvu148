@@ -11,6 +11,8 @@ define create-venv
 python3 -m venv venv
 endef
 
+args = `arg="$(filter-out $@,$(MAKECMDGOALS))" && echo $${arg:-${1}}`
+
 .PHONY: all
 all: clean venv run git
 
@@ -21,7 +23,7 @@ venv:
 
 git:
 	$@ add .
-	$@ commit -m "update svg"
+	$@ commit -m "$(call args,update svg)"
 	$@ push origin master
 
 freeze: venv
@@ -41,3 +43,6 @@ uninstall:
 
 %.unzip: %
 	gzip -d $<
+
+test:
+	@echo $(call args,defaultstring)
