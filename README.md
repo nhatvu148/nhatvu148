@@ -62,6 +62,5 @@
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=ultimate_rust_crash_course&theme=blueberry)](https://github.com/nhatvu148/ultimate_rust_crash_course)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=Rust-Programming-Recipies&theme=blueberry)](https://github.com/nhatvu148/Rust-Programming-Recipies)
-
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=proto-rust&theme=blueberry)](
 https://github.com/nhatvu148/proto-rust)
