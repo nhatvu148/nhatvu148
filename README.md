@@ -9,7 +9,7 @@
 <img title="JavaScript" alt="JavaScript" width="26px" src="images/JavaScript-logo.png" />&nbsp;&nbsp;
 <img title="TypeScript" alt="TypeScript" width="26px" src="images/Typescript_logo_2020.svg" />&nbsp;&nbsp;
 <img title="C#" alt="C#" width="26px" src="images/c-sharp.png" />&nbsp;&nbsp;
-<!-- <img title="C++" alt="C++" width="24px" src="images/ISO_C++_Logo.svg" />&nbsp;&nbsp; -->
+<img title="C++" alt="C++" width="24px" src="images/ISO_C++_Logo.svg" />&nbsp;&nbsp;
 <img title="Go" alt="Go" width="35px" src="images/muscles-clipart-ghoper.gif" />&nbsp;&nbsp;
 <img title="Rust" alt="Rust" width="40px" src="images/rustacean-flat-happy.svg" />&nbsp;&nbsp;
 <img title="Python" alt="Python" width="24px" src="images/Python-logo-notext.svg" />&nbsp;&nbsp;
@@ -62,3 +62,5 @@
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=ultimate_rust_crash_course&theme=blueberry)](https://github.com/nhatvu148/ultimate_rust_crash_course)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=Rust-Programming-Recipies&theme=blueberry)](https://github.com/nhatvu148/Rust-Programming-Recipies)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=proto-rust&theme=blueberry)](
+https://github.com/nhatvu148/proto-rust)
