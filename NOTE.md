@@ -13,3 +13,4 @@
 
 - deactivate
 - rmdir venv /s
+- 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
