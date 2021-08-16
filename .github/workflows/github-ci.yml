@@ -4,12 +4,14 @@
 name: Python package
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+#   push:
+#     branches: [ master ]
+#   pull_request:
+#     branches: [ master ]
+  workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"
+    # Runs at 12am UTC
+    - cron: '0 0 * * *'
 
 jobs:
   build:
