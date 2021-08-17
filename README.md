@@ -3,7 +3,7 @@
 <!-- <img src="images/shiba.gif" width=30%><img src="images/shiba.gif" width=30%><img src="images/shiba.gif" width=30%> -->
 <p style="float:left"><img src="https://visitor-badge.glitch.me/badge?page_id=nhatvu148.nhatvu148" alt="visitors"></p>
 
-<!-- ### Languages and Tools: -->
+### Languages and Tools:
 
 <div align="center">
 <img title="JavaScript" alt="JavaScript" width="26px" src="images/JavaScript-logo.png" />&nbsp;&nbsp;
@@ -28,9 +28,9 @@
 <br />
 <br />
 
-<!-- ### Waka Stats: -->
+### Waka Stats:
 
-<!-- <img src="https://github.com/nhatvu148/nhatvu148/blob/master/images/stat.svg" alt="Nhat Vu WakaTime Activity"/> -->
+<img src="https://github.com/nhatvu148/nhatvu148/blob/master/images/stat.svg" alt="Nhat Vu WakaTime Activity"/>
 
 <!-- ### GitHub Stats: -->
 
