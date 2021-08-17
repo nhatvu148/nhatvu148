@@ -25,9 +25,6 @@
 <img title="Gitlab" alt="Gitlab" width="30px" src="images/gitlab-logo-png-transparent.png" />&nbsp;&nbsp;
 </div>
 
-<br />
-<br />
-
 ### Waka Stats:
 
 <img src="https://github.com/nhatvu148/nhatvu148/blob/master/images/stat.svg" alt="Nhat Vu WakaTime Activity"/>
