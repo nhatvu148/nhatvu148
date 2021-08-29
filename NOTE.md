@@ -13,3 +13,12 @@
 
 - deactivate
 - rmdir venv /s
+
+# ML:
+
+- pip install sklearn
+- pip install jupyterlab
+- pip install notebook
+
+- jupyter-lab
+- jupyter notebook
