@@ -41,10 +41,7 @@
 <!-- ### Extra Pins -->
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=helpers&theme=blueberry)](https://github.com/nhatvu148/helpers)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=deno-learn&theme=blueberry)](https://github.com/nhatvu148/deno-learn)
-
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=linux-commands&theme=blueberry)](https://github.com/nhatvu148/linux-commands)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=k8s&theme=blueberry)](https://github.com/nhatvu148/k8s)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=rust-1.51-workshop&theme=blueberry)](https://github.com/nhatvu148/rust-1.51-workshop)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=DllImporting&theme=blueberry)](https://github.com/nhatvu148/DllImporting)
