@@ -63,3 +63,7 @@ https://github.com/nhatvu148/proto-rust)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=tensorflow-deep-learning&theme=blueberry)](
 https://github.com/nhatvu148/tensorflow-deep-learning)
 
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=scientific-python-lectures&theme=blueberry)](
+https://github.com/nhatvu148/scientific-python-lectures)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=codewar&theme=blueberry)](
+https://github.com/nhatvu148/codewar)
