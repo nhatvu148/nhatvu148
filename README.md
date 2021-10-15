@@ -65,5 +65,5 @@ https://github.com/nhatvu148/tensorflow-deep-learning)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=scientific-python-lectures&theme=blueberry)](
 https://github.com/nhatvu148/scientific-python-lectures)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=proshop_mern&theme=blueberry)](
-https://github.com/nhatvu148/proshop_mern)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=learngo&theme=blueberry)](
+https://github.com/nhatvu148/learngo)
