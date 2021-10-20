@@ -75,20 +75,85 @@ $Object.AddHours(15)
 # "{0:C2}" -f 1000000000000
 # "{0:P2}" -f 1000000000000
 
-Test-Path “c:\test.txt”  
-Test-Path “c:\test2.txt” 
-New-Item -ItemType File “c:\test.txt”  
-If (!(Test-Path “c:\test.txt”)){ New-Item -ItemType File “c:\test.txt” } 
-Test-Path -Path "HKLM:\Software\Microsoft\PowerShell\1\ShellIds\Microsoft.PowerShell" 
-Test-Path $pshome\pwsh.exe -NewerThan "July 24, 2019" 
+# Test-Path “c:\test.txt”  
+# Test-Path “c:\test2.txt” 
+# New-Item -ItemType File “c:\test.txt”  
+# If (!(Test-Path “c:\test.txt”)){ New-Item -ItemType File “c:\test.txt” } 
+# Test-Path -Path "HKLM:\Software\Microsoft\PowerShell\1\ShellIds\Microsoft.PowerShell" 
+# Test-Path $pshome\pwsh.exe -NewerThan "July 24, 2019" 
 
-Get-ExecutionPolicy 
-Set-ExecutionPolicy -ExecutionPolicy 
+# Get-ExecutionPolicy 
+# Set-ExecutionPolicy -ExecutionPolicy 
 
-$creds = Get-Credential 
+# $creds = Get-Credential 
 
-Invoke-Command -ComputerName svr01 -Credential $creds -ScriptBlock { Get-ExecutionPolicy} 
-Invoke-Command -ComputerName svr01 -Credential $creds -FilePath “e:\scripts\demo.ps1” 
+# Invoke-Command -ComputerName svr01 -Credential $creds -ScriptBlock { Get-ExecutionPolicy} 
+# Invoke-Command -ComputerName svr01 -Credential $creds -FilePath “e:\scripts\demo.ps1” 
 
-Enter-PSSession -ComputerName svr01 -Credential $creds
-Exit-PSSession 
+# Enter-PSSession -ComputerName svr01 -Credential $creds
+# Exit-PSSession 
+
+# Set-StrictMode -Version latest
+# Set-StrictMode -Off
+
+$GivenName = "Nhat Vu"
+$GivenName.Length
+$GivenName.GetType()
+$Value1 = 2
+$Value2 = 10
+
+($Value1 -eq $Value2)
+
+#######
+$Names = @('Bob', 'Steve', 'John')
+$Names.IsFixedSize
+$Names[0]
+$Names = $Names + 'Paul'
+$Names += 'Tim'
+$Names = $Names -ne 'John'
+$Names
+
+#######
+$NameList = [System.Collections.ArrayList]@('Bob', 'John', 'Tim')
+$null = $NameList.Add('Mike')
+$NameList
+$NameList.Remove('Mike')
+$NameList
+$NameList.RemoveAt(0)
+$NameList
+
+$Array = @()
+$ArrayList = [System.Collections.ArrayList]@()
+# Measure-Command -Expression { @(0..50000).ForEach({ $Array += $_ }) } # Very slow!
+Measure-Command -Expression { @(0..50000).ForEach({ $ArrayList.Add($_ ) }) }
+
+###### Hashtable
+$Users = @{
+    johns  = "John Smith"
+    bobt   = "Bob Test"
+    stevep = "Steve Pickle"
+}
+$Users
+$Users.Keys
+$Users.Values
+$Users["johns"]
+$Users.bobt
+$Users.Add("Nhat", "Vu")
+$Users['test'] = 'test user'
+$Users.ContainsKey('haha')
+$Users.Remove('Nhat')
+$Users
+
+$Dog = New-Object -TypeName PSCustomObject
+Add-Member -InputObject $Dog -MemberType  NoteProperty -Name 'Name' -Value 'Penny'
+Add-Member -InputObject $Dog -MemberType  NoteProperty -Name 'Breed' -Value 'Pug'
+
+$Dog 
+$Dog.Name
+
+Get-Member -InputObject $Dog
+
+$Cat = [PSCustomObject]@{
+    Name = 'Frankie'; Breed = 'Persian'
+}
+$Cat
