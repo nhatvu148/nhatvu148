@@ -22,3 +22,9 @@
 
 - jupyter-lab
 - jupyter notebook
+
+# Dig DNS:
+
+- https://www.iana.org/domains/root/servers
+- dig @198.41.0.4 www.facebook.com
+- dig www.facebook.com
