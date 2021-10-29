@@ -12,6 +12,7 @@
 <img title="C++" alt="C++" width="24px" src="images/ISO_C++_Logo.svg" />&nbsp;&nbsp;
 <img title="Go" alt="Go" width="35px" src="images/muscles-clipart-ghoper.gif" />&nbsp;&nbsp;
 <img title="Rust" alt="Rust" width="40px" src="images/rustacean-flat-happy.svg" />&nbsp;&nbsp;
+<img title="Powershell" alt="Powershell" width="24px" src="images/powershell-icon-17196.png" />&nbsp;&nbsp;
 <img title="Python" alt="Python" width="24px" src="images/Python-logo-notext.svg" />&nbsp;&nbsp;
 <img title="Redis" alt="Redis" width="35px" src="images/redis-logo.png" />&nbsp;&nbsp;
 <img title="MySQL" alt="MySQL" width="27px" src="images/mysql_logo-300x300.png" />&nbsp;&nbsp;
