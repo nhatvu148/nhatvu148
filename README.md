@@ -35,36 +35,36 @@
 <!-- [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=nhatvu148&theme=tokyonight)](https://profile-summary-for-github.com/user/nhatvu148) -->
 
 <!-- <p>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nhatvu148&show_icons=true&layout=compact&cache_seconds=1800&langs_count=8&theme=blueberry&count_private=true&show_icons=true" width=40% height="204px"/>
+<img src="https://nhatvu148.vercel.app.app/api/top-langs/?username=nhatvu148&show_icons=true&layout=compact&cache_seconds=1800&langs_count=8&theme=blueberry&count_private=true&show_icons=true" width=40% height="204px"/>
 <img src="https://github-readme-streak-stats.herokuapp.com?user=nhatvu148&theme=tokyonight" width=55% height="204px"/>
 </p>
  -->
 <!-- ### Extra Pins -->
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=helpers&theme=blueberry)](https://github.com/nhatvu148/helpers)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=linux-commands&theme=blueberry)](https://github.com/nhatvu148/linux-commands)
+[![Readme Card](https://nhatvu148.vercel.app.app/api/pin/?username=nhatvu148&repo=helpers&theme=blueberry)](https://github.com/nhatvu148/helpers)
+[![Readme Card](https://nhatvu148.vercel.app.app/api/pin/?username=nhatvu148&repo=linux-commands&theme=blueberry)](https://github.com/nhatvu148/linux-commands)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=rust-1.51-workshop&theme=blueberry)](https://github.com/nhatvu148/rust-1.51-workshop)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=DllImporting&theme=blueberry)](https://github.com/nhatvu148/DllImporting)
+[![Readme Card](https://nhatvu148.vercel.app.app/api/pin/?username=nhatvu148&repo=rust-1.51-workshop&theme=blueberry)](https://github.com/nhatvu148/rust-1.51-workshop)
+[![Readme Card](https://nhatvu148.vercel.app.app/api/pin/?username=nhatvu148&repo=DllImporting&theme=blueberry)](https://github.com/nhatvu148/DllImporting)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=grpc-csharp&theme=blueberry)](https://github.com/nhatvu148/grpc-csharp)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=simplebank&theme=blueberry)](https://github.com/nhatvu148/simplebank)
+[![Readme Card](https://nhatvu148.vercel.app.app/api/pin/?username=nhatvu148&repo=grpc-csharp&theme=blueberry)](https://github.com/nhatvu148/grpc-csharp)
+[![Readme Card](https://nhatvu148.vercel.app.app/api/pin/?username=nhatvu148&repo=simplebank&theme=blueberry)](https://github.com/nhatvu148/simplebank)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=Hands-On-Data-Structures-and-Algorithms-with-Rust&theme=blueberry)](https://github.com/nhatvu148/Hands-On-Data-Structures-and-Algorithms-with-Rust)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=Hands-On-Systems-Programming-with-Rust&theme=blueberry)](https://github.com/nhatvu148/Hands-On-Systems-Programming-with-Rust)
+[![Readme Card](https://nhatvu148.vercel.app.app/api/pin/?username=nhatvu148&repo=Hands-On-Data-Structures-and-Algorithms-with-Rust&theme=blueberry)](https://github.com/nhatvu148/Hands-On-Data-Structures-and-Algorithms-with-Rust)
+[![Readme Card](https://nhatvu148.vercel.app.app/api/pin/?username=nhatvu148&repo=Hands-On-Systems-Programming-with-Rust&theme=blueberry)](https://github.com/nhatvu148/Hands-On-Systems-Programming-with-Rust)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=invaders&theme=blueberry)](https://github.com/nhatvu148/invaders)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=ultimate_rust_crash_course&theme=blueberry)](https://github.com/nhatvu148/ultimate_rust_crash_course)
+[![Readme Card](https://nhatvu148.vercel.app.app/api/pin/?username=nhatvu148&repo=invaders&theme=blueberry)](https://github.com/nhatvu148/invaders)
+[![Readme Card](https://nhatvu148.vercel.app.app/api/pin/?username=nhatvu148&repo=ultimate_rust_crash_course&theme=blueberry)](https://github.com/nhatvu148/ultimate_rust_crash_course)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=Rust-Programming-Recipies&theme=blueberry)](https://github.com/nhatvu148/Rust-Programming-Recipies)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=proto-rust&theme=blueberry)](
+[![Readme Card](https://nhatvu148.vercel.app.app/api/pin/?username=nhatvu148&repo=Rust-Programming-Recipies&theme=blueberry)](https://github.com/nhatvu148/Rust-Programming-Recipies)
+[![Readme Card](https://nhatvu148.vercel.app.app/api/pin/?username=nhatvu148&repo=proto-rust&theme=blueberry)](
 https://github.com/nhatvu148/proto-rust)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=zero-to-mastery-ml&theme=blueberry)](https://github.com/nhatvu148/zero-to-mastery-ml)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=tensorflow-deep-learning&theme=blueberry)](
+[![Readme Card](https://nhatvu148.vercel.app.app/api/pin/?username=nhatvu148&repo=zero-to-mastery-ml&theme=blueberry)](https://github.com/nhatvu148/zero-to-mastery-ml)
+[![Readme Card](https://nhatvu148.vercel.app.app/api/pin/?username=nhatvu148&repo=tensorflow-deep-learning&theme=blueberry)](
 https://github.com/nhatvu148/tensorflow-deep-learning)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=scientific-python-lectures&theme=blueberry)](
+[![Readme Card](https://nhatvu148.vercel.app.app/api/pin/?username=nhatvu148&repo=scientific-python-lectures&theme=blueberry)](
 https://github.com/nhatvu148/scientific-python-lectures)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=learngo&theme=blueberry)](
+[![Readme Card](https://nhatvu148.vercel.app.app/api/pin/?username=nhatvu148&repo=learngo&theme=blueberry)](
 https://github.com/nhatvu148/learngo)
