@@ -8,10 +8,12 @@
 ### Languages and Tools:
 
 <div align="center">
-<img title="JavaScript" alt="JavaScript" width="26px" src="images/JavaScript-logo.png" />&nbsp;&nbsp;
 <img title="TypeScript" alt="TypeScript" width="26px" src="images/Typescript_logo_2020.svg" />&nbsp;&nbsp;
+<img title="React" alt="React" width="30px" src="images/react-svgrepo-com.svg" />&nbsp;&nbsp;
+<img title="Angular" alt="Angular" width="30px" src="images/angular-svgrepo-com.svg" />&nbsp;&nbsp;
 <img title="C#" alt="C#" width="26px" src="images/c-sharp.png" />&nbsp;&nbsp;
 <img title="C++" alt="C++" width="24px" src="images/ISO_C++_Logo.svg" />&nbsp;&nbsp;
+<img title="Fortran" alt="Fortran" width="24px" src="images/Fortran_logo.svg" />&nbsp;&nbsp;
 <img title="Go" alt="Go" width="35px" src="images/muscles-clipart-ghoper.gif" />&nbsp;&nbsp;
 <img title="Rust" alt="Rust" width="40px" src="images/rustacean-flat-happy.svg" />&nbsp;&nbsp;
 <img title="PowerShell" alt="PowerShell" width="24px" src="images/powershell-icon-17196.png" />&nbsp;&nbsp;
@@ -21,11 +23,9 @@
 <img title="PostgreSQL" alt="PostgreSQL" width="27px" src="images/postgresql-icon.svg" />&nbsp;&nbsp;
 <img title="Docker" alt="Docker" width="35px" src="images/4844483.png" />&nbsp;&nbsp;
 <img title="Kubernetes" alt="Kubernetes" width="32px" src="images/4569637.png" />&nbsp;&nbsp;
-<img title="Visual Studio" alt="Visual Studio" width="26px" src="images/Visual_Studio_Icon_2019.svg" />&nbsp;&nbsp;
+<img title="Terraform" alt="Terraform" width="35px" src="images/terraform-svgrepo-com.svg" />&nbsp;&nbsp;
 <img title="Visual Studio Code" alt="Visual Studio Code" width="26px" src="images/Visual_Studio_Code_1.35_icon.svg" />&nbsp;&nbsp;
 <img title="Git" alt="Git" width="30px" src="images/Git_icon.svg.png" />&nbsp;&nbsp;
-<img title="Github" alt="Github" width="30px" src="images/25231.svg" />&nbsp;&nbsp;
-<img title="Gitlab" alt="Gitlab" width="30px" src="images/gitlab-logo-png-transparent.png" />&nbsp;&nbsp;
 </div>
 
 ### Waka Stats:
