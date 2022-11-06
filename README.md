@@ -9,11 +9,6 @@
 
 <div align="center">
 <img title="TypeScript" alt="TypeScript" width="26px" src="images/Typescript_logo_2020.svg" />&nbsp;&nbsp;
-<img title="React" alt="React" width="30px" src="images/react-svgrepo-com.svg" />&nbsp;&nbsp;
-<img title="Angular" alt="Angular" width="30px" src="images/angular-svgrepo-com.svg" />&nbsp;&nbsp;
-<img title="C#" alt="C#" width="26px" src="images/c-sharp.png" />&nbsp;&nbsp;
-<img title="C++" alt="C++" width="24px" src="images/ISO_C++_Logo.svg" />&nbsp;&nbsp;
-<img title="Fortran" alt="Fortran" width="24px" src="images/Fortran_logo.svg" />&nbsp;&nbsp;
 <img title="Go" alt="Go" width="35px" src="images/muscles-clipart-ghoper.gif" />&nbsp;&nbsp;
 <img title="Rust" alt="Rust" width="40px" src="images/rustacean-flat-happy.svg" />&nbsp;&nbsp;
 <img title="PowerShell" alt="PowerShell" width="24px" src="images/powershell-icon-17196.png" />&nbsp;&nbsp;
