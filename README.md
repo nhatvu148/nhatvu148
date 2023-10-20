@@ -3,6 +3,7 @@
 <!-- <img src="images/shiba.gif" width=30%><img src="images/shiba.gif" width=30%><img src="images/shiba.gif" width=30%> -->
 <!-- <p style="float:left"><img src="https://visitor-badge.glitch.me/badge?page_id=nhatvu148.nhatvu148" alt="visitors"></p> -->
 [![wakatime](https://wakatime.com/badge/user/37f85803-060b-4faf-950b-e8a7c3f4d7e7.svg)](https://wakatime.com/@37f85803-060b-4faf-950b-e8a7c3f4d7e7)
+[![github](https://img.shields.io/github/followers/nhatvu148?logo=github&style=plastic)](https://github.com/nhatvu148?tab=followers)
 
 # Hi there! Welcome to my Github page!
 
