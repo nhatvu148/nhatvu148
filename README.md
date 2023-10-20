@@ -1,7 +1,8 @@
 <!-- <h1 align="center">Welcome to my GitHub page!</h1> -->
 
 <!-- <img src="images/shiba.gif" width=30%><img src="images/shiba.gif" width=30%><img src="images/shiba.gif" width=30%> -->
-<p style="float:left"><img src="https://visitor-badge.glitch.me/badge?page_id=nhatvu148.nhatvu148" alt="visitors"></p>
+<!-- <p style="float:left"><img src="https://visitor-badge.glitch.me/badge?page_id=nhatvu148.nhatvu148" alt="visitors"></p> -->
+[![wakatime](https://wakatime.com/badge/user/37f85803-060b-4faf-950b-e8a7c3f4d7e7.svg)](https://wakatime.com/@37f85803-060b-4faf-950b-e8a7c3f4d7e7)
 
 # Hi there! Welcome to my Github page!
 
