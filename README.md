@@ -29,6 +29,12 @@
 
 <img src="https://github.com/nhatvu148/nhatvu148/blob/master/images/stat.svg" alt="Nhat Vu WakaTime Activity"/>
 
+### Activity:
+<img src="images/days.gif" alt="Days"/>
+
+### Most active weekdays:
+<img src="images/weekdays.gif" alt="Most active weekdays"/>
+
 <!-- ### GitHub Stats: -->
 
 <!-- [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=nhatvu148&theme=tokyonight)](https://profile-summary-for-github.com/user/nhatvu148) -->
