@@ -7,7 +7,7 @@
 
 # Hi there! Welcome to my Github page!
 
-### Languages and Tools:
+### Languages and Tools
 
 <div align="center">
 <img title="TypeScript" alt="TypeScript" width="26px" src="images/Typescript_logo_2020.svg" />&nbsp;&nbsp;
@@ -25,14 +25,16 @@
 <img title="Git" alt="Git" width="30px" src="images/Git_icon.svg.png" />&nbsp;&nbsp;
 </div>
 
-### Waka Stats:
+### Waka Stats
 
-<img src="https://github.com/nhatvu148/nhatvu148/blob/master/images/stat.svg" alt="Nhat Vu WakaTime Activity"/>
+<img src="images/stat.svg" alt="Nhat Vu WakaTime Activity"/>
 
-### Activity:
+### Activity
+
 <img src="images/days.gif" alt="Days"/>
 
-### Most active weekdays:
+### Most active weekdays
+
 <img src="images/weekdays.gif" alt="Most active weekdays"/>
 
 <!-- ### GitHub Stats: -->
