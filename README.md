@@ -29,6 +29,7 @@
 
 <img src="images/stat.svg" alt="Nhat Vu WakaTime Activity"/>
 
+<!--
 ### Activity
 
 <img src="images/days.gif" alt="Days"/>
@@ -36,6 +37,7 @@
 ### Most active weekdays
 
 <img src="images/weekdays.gif" alt="Most active weekdays"/>
+-->
 
 <!-- ### GitHub Stats: -->
 
