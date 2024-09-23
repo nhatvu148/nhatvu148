@@ -50,6 +50,7 @@
  -->
 <!-- ### Extra Pins -->
 
+<!--
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=helpers&theme=blueberry)](https://github.com/nhatvu148/helpers)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=linux-commands&theme=blueberry)](https://github.com/nhatvu148/linux-commands)
 
@@ -57,3 +58,4 @@
 https://github.com/nhatvu148/scientific-python-lectures)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nhatvu148&repo=learngo&theme=blueberry)](
 https://github.com/nhatvu148/learngo)
+-->
