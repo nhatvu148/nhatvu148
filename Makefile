@@ -8,7 +8,7 @@ PYTHON = $(shell "$(CMD_FROM_VENV)" "python3")
 PIP = "$(VENV_BIN_DIR)/pip"
 
 define create-venv
-python3 -m venv venv
+python3.10 -m venv venv
 endef
 
 args = `arg="$(filter-out $@,$(MAKECMDGOALS))" && echo $${arg:-${1}}`
