@@ -23,7 +23,7 @@ tasks:
       - task: run
       - task: git
         vars:
-          CLI_ARGS: "readd README.md"
+          CLI_ARGS: "{{.CLI_ARGS}}"
 
   venv:
     desc: Create virtual environment and install dependencies
