@@ -16,7 +16,7 @@ tasks:
       - "{{.GLOBAL_PYTHON}} -m venv venv"
 
   all:
-    desc: Run clean, venv, run, and git tasks, ex, task all -- "commit message"
+    desc: Run clean, venv, run, and git tasks, ex, task all -- commit message
     cmds:
       - task: clean
       - task: venv
