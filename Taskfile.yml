@@ -23,7 +23,7 @@ tasks:
       - task: run
       - task: git
         vars:
-          CLI_ARGS: "update svg and Taskfile.yml"
+          CLI_ARGS: "readd README.md"
 
   venv:
     desc: Create virtual environment and install dependencies
