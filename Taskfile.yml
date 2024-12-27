@@ -1,0 +1,76 @@
+version: '3'
+
+vars:
+  GLOBAL_PYTHON: "python3.10"
+  ROOT_DIR: "."
+  SRC_DIR: "./src"
+  VENV_BIN_DIR: "venv/bin"
+  PYTHON: '{{.VENV_BIN_DIR}}/python3'
+  PIP: '{{.VENV_BIN_DIR}}/pip'
+
+silent: true
+
+tasks:
+  create-venv:
+    cmds:
+      - "{{.GLOBAL_PYTHON}} -m venv venv"
+
+  all:
+    desc: Run clean, venv, run, and git tasks
+    cmds:
+      - task: clean
+      - task: venv
+      - task: run
+      - task: git
+    vars:
+      CLI_ARGS: "update svg and Taskfile.yml"
+
+  venv:
+    desc: Create virtual environment and install dependencies
+    cmds:
+      - task: create-venv
+      - '{{.PIP}} install -r requirements.txt'
+      - '{{.PIP}} install --upgrade pip'
+
+  git:
+    desc: Git operations including add, commit, and push
+    cmds:
+      - git add .
+      - git commit -m "{{.CLI_ARGS | default "update svg"}}"
+      - git push origin master
+
+  freeze:
+    desc: Freeze current package installations into requirements.txt
+    cmds:
+      - task: venv
+      - '{{.PIP}} freeze > requirements.txt'
+
+  run:
+    desc: Run the main script
+    cmds:
+      - '{{.PYTHON}} main.py'
+
+  clean:
+    desc: Remove the virtual environment
+    cmds:
+      - rm -rf venv
+
+  uninstall:
+    desc: Uninstall all packages from the global Python environment
+    cmds:
+      - '{{.GLOBAL_PYTHON}} -m pip freeze | xargs {{.GLOBAL_PYTHON}} -m pip uninstall -y'
+
+  gzip:
+    desc: Compress a file with gzip, ex, task gzip -- "file.txt"
+    cmds:
+      - gzip "{{.CLI_ARGS}}"
+
+  gunzip:
+    desc: Decompress a gzip file, ex, task gunzip -- "file.txt.gz"
+    cmds:
+      - gzip -d "{{.CLI_ARGS}}"
+
+  test:
+    desc: Echo the provided argument or default string, ex, task test -- "This is a test"
+    cmds:
+      - echo {{.CLI_ARGS | default "defaultstring"}}
