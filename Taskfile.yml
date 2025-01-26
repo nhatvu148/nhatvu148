@@ -15,18 +15,18 @@ tasks:
     cmds:
       - "{{.GLOBAL_PYTHON}} -m venv venv"
 
-  all:
-    desc: Run clean, venv, run, and git tasks, ex, task all -- commit message
-    cmds:
-      - task: clean
-      - task: venv
-      - task: run
-      - task: git
-        vars:
-          CLI_ARGS: "{{.CLI_ARGS}}"
+  # all:
+  #   desc: Run clean, venv, run, and git tasks, ex, task all -- commit message
+  #   cmds:
+  #     - task: clean
+  #     - task: venv
+  #     - task: run
+  #     - task: git
+  #       vars:
+  #         CLI_ARGS: "{{.CLI_ARGS}}"
   
-  run:uv:
-    desc: Run the main script with uvicorn
+  all:
+    desc: Run the main script with uv, and git tasks, ex, task all -- commit message
     cmds:
       - task: uv
       - task: git
