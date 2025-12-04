@@ -48,6 +48,7 @@ fn main() -> Result<(), Burnout> {
 <img title="TypeScript" alt="TypeScript" width="26px" src="images/Typescript_logo_2020.svg" />&nbsp;&nbsp;
 <img title="Python" alt="Python" width="26px" src="images/Python-logo-notext.svg" />&nbsp;&nbsp;
 <img title="Rust" alt="Rust" width="40px" src="images/rustacean-flat-happy.svg" />&nbsp;&nbsp;
+<img title="C++" alt="C++" width="26px" src="images/ISO_C++_Logo.svg" />&nbsp;&nbsp;
 <img title="React" alt="React" width="28px" src="images/react-svgrepo-com.svg" />&nbsp;&nbsp;
 <img title="Angular" alt="Angular" width="28px" src="images/angular-svgrepo-com.svg" />&nbsp;&nbsp;
 <img title="PostgreSQL" alt="PostgreSQL" width="27px" src="images/postgresql-icon.svg" />&nbsp;&nbsp;
