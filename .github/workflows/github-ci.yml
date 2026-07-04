@@ -9,9 +9,10 @@ on:
 #   pull_request:
 #     branches: [ master ]
   workflow_dispatch:
-  schedule:
-    # Runs at 12am UTC
-    - cron: '0 0 * * *'
+  # Daily scheduling moved to update-stats.yml (which also commits & pushes the SVG).
+  # schedule:
+  #   # Runs at 12am UTC
+  #   - cron: '0 0 * * *'
 
 jobs:
   build:
