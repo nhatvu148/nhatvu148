@@ -2,6 +2,7 @@ import datetime
 import json
 import os
 import random
+import re
 import sys
 
 import matplotlib.pyplot as plt
@@ -54,6 +55,13 @@ def make_graph(data: list):
             color="#586069"
         )
     plt.savefig("images/stat.svg", bbox_inches="tight", transparent=True)
+    # GitHub's image proxy refuses to render SVGs that contain a DOCTYPE /
+    # external DTD reference, so strip it out of matplotlib's output.
+    with open("images/stat.svg", "r", encoding="utf-8") as svg_file:
+        svg = svg_file.read()
+    svg = re.sub(r"<!DOCTYPE[^>]*>\s*", "", svg, flags=re.DOTALL)
+    with open("images/stat.svg", "w", encoding="utf-8") as svg_file:
+        svg_file.write(svg)
     print("new image generated")
 
 
