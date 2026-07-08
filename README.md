@@ -45,21 +45,21 @@ fn main() -> Result<(), Burnout> {
 ### Things I play with
 
 <div align="center">
-<img title="TypeScript" alt="TypeScript" width="26px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/Typescript_logo_2020.svg" />&nbsp;&nbsp;
-<img title="Python" alt="Python" width="26px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/Python-logo-notext.svg" />&nbsp;&nbsp;
-<img title="Rust" alt="Rust" width="40px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/rustacean-flat-happy.svg" />&nbsp;&nbsp;
-<img title="C++" alt="C++" width="26px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/ISO_C++_Logo.svg" />&nbsp;&nbsp;
-<img title="React" alt="React" width="28px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/react-svgrepo-com.svg" />&nbsp;&nbsp;
-<img title="Angular" alt="Angular" width="28px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/angular-svgrepo-com.svg" />&nbsp;&nbsp;
-<img title="PostgreSQL" alt="PostgreSQL" width="27px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/postgresql-icon.svg" />&nbsp;&nbsp;
-<img title="MongoDB" alt="MongoDB" width="27px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/mongo-svgrepo-com.svg" />&nbsp;&nbsp;
-<img title="Redis" alt="Redis" width="35px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/redis-logo.png" />&nbsp;&nbsp;
-<img title="Docker" alt="Docker" width="35px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/4844483.png" />&nbsp;&nbsp;
+<img title="TypeScript" alt="TypeScript" width="26px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/Typescript_logo_2020.svg" />&nbsp;&nbsp;
+<img title="Python" alt="Python" width="26px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/Python-logo-notext.svg" />&nbsp;&nbsp;
+<img title="Rust" alt="Rust" width="40px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/rustacean-flat-happy.svg" />&nbsp;&nbsp;
+<img title="C++" alt="C++" width="26px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/ISO_C++_Logo.svg" />&nbsp;&nbsp;
+<img title="React" alt="React" width="28px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/react-svgrepo-com.svg" />&nbsp;&nbsp;
+<img title="Angular" alt="Angular" width="28px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/angular-svgrepo-com.svg" />&nbsp;&nbsp;
+<img title="PostgreSQL" alt="PostgreSQL" width="27px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/postgresql-icon.svg" />&nbsp;&nbsp;
+<img title="MongoDB" alt="MongoDB" width="27px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/mongo-svgrepo-com.svg" />&nbsp;&nbsp;
+<img title="Redis" alt="Redis" width="35px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/redis-logo.png" />&nbsp;&nbsp;
+<img title="Docker" alt="Docker" width="35px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/4844483.png" />&nbsp;&nbsp;
 </div>
 
 ### This week
 
-<img src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/stat.svg" alt="WakaTime Activity"/>
+<img src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/stat.svg" alt="WakaTime Activity"/>
 
 ---
 
