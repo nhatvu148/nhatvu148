@@ -9,3 +9,10 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    # Bundle every dependency bump into a single PR instead of one per package
+    # (the ecosystem scans both requirements.txt and uv.lock, so ungrouped it
+    # opened ~8 PRs at once, several of them duplicates).
+    groups:
+      python-dependencies:
+        patterns:
+          - "*"
