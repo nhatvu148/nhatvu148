@@ -8,5 +8,5 @@ dependencies = [
     "matplotlib>=3.10.0",
     "numpy>=2.2.2",
     "python-dotenv>=1.0.1",
-    "requests>=2.32.3",
+    "requests>=2.33.0",
 ]
