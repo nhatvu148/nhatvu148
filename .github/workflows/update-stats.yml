@@ -52,7 +52,7 @@ jobs:
             # unchanged URL keeps showing a days-old graph on the profile. Bump a
             # cache-busting ?v= param whenever the graph changes to force a refresh.
             ts=$(date -u +%Y%m%d%H%M%S)
-            sed -i -E "s|(images/stat\.svg)(\?v=[0-9]+)?|\1?v=$ts|" README.md
+            sed -i -E "s|images/stat\.svg(\?v=[0-9]+)?|images/stat.svg?v=$ts|" README.md
             git add README.md
             git commit -m "update svg"
             git push origin HEAD:master
