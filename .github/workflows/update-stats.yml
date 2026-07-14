@@ -47,6 +47,13 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
+            # The graph is embedded in the README via a stable jsDelivr URL, and
+            # GitHub's Camo image proxy caches it by URL with no purge API — so an
+            # unchanged URL keeps showing a days-old graph on the profile. Bump a
+            # cache-busting ?v= param whenever the graph changes to force a refresh.
+            ts=$(date -u +%Y%m%d%H%M%S)
+            sed -i -E "s|(images/stat\.svg)(\?v=[0-9]+)?|\1?v=$ts|" README.md
+            git add README.md
             git commit -m "update svg"
             git push origin HEAD:master
           fi
