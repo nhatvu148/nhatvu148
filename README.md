@@ -59,7 +59,7 @@ fn main() -> Result<(), Burnout> {
 
 ### This week
 
-<img src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/stat.svg?v=20260722182152" alt="WakaTime Activity"/>
+<img src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/stat.svg?v=20260723001716" alt="WakaTime Activity"/>
 
 ---
 
