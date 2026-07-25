@@ -14,12 +14,45 @@ load_dotenv()
 
 waka_key = os.getenv("INPUT_WAKATIME_API_KEY")
 
+# 7 days is too noisy to be representative — a single week spent on docs or CI
+# config buries the languages actually worked in. 30 days smooths that out.
+WAKA_RANGE = "last_30_days"
+
+# WakaTime counts every file type it sees, so markup, config and data formats
+# dominate the ranking without saying anything about what was built. Drop them
+# and chart programming languages only. Matched case-insensitively.
+EXCLUDED_LANGUAGES = {
+    "markdown", "json", "yaml", "toml", "ini", "xml", "csv", "tsv",
+    "text", "plain text", "other", "docker", "dockerfile", "makefile",
+    "git ignore", "gitignore", "git config", "editorconfig", "log",
+    "env file", "dotenv", "requirements.txt", "lock", "conf", "properties",
+    "binary", "image (svg)", "image (png)",
+}
+
+# How many bars to draw
+TOP_N = 5
+
+
+def humanize(seconds: float) -> str:
+    """Formats a duration the way WakaTime does: '7 hrs 2 mins'."""
+    total_minutes = int(seconds // 60)
+    hours, minutes = divmod(total_minutes, 60)
+    if not hours:
+        return f"{minutes} min" if minutes == 1 else f"{minutes} mins"
+    hrs = "hr" if hours == 1 else "hrs"
+    mins = "min" if minutes == 1 else "mins"
+    return f"{hours} {hrs} {minutes} {mins}"
+
+
 def this_week(dates: list) -> str:
-    """Returns a week streak"""
-    week_end = datetime.datetime.strptime(dates[4], "%Y-%m-%dT%H:%M:%SZ")
-    week_start = datetime.datetime.strptime(dates[3], "%Y-%m-%dT%H:%M:%SZ")
-    print("week header created")
-    return f"From {week_start.strftime('%d %B, %Y')} to {week_end.strftime('%d %B, %Y')}: {dates[5]}"
+    """Returns the chart title: the date range and total coding time."""
+    range_end = datetime.datetime.strptime(dates[4], "%Y-%m-%dT%H:%M:%SZ")
+    range_start = datetime.datetime.strptime(dates[3], "%Y-%m-%dT%H:%M:%SZ")
+    print("range header created")
+    return (
+        f"{range_start.strftime('%d %B, %Y')} to {range_end.strftime('%d %B, %Y')}"
+        f" — {dates[5]} of code"
+    )
 
 
 def make_graph(data: list):
@@ -68,30 +101,46 @@ def make_graph(data: list):
 def get_stats() -> list:
     """Gets API data and returns markdown progress"""
     data = requests.get(
-        f"https://wakatime.com/api/v1/users/current/stats/last_7_days?api_key={waka_key}"
+        f"https://wakatime.com/api/v1/users/current/stats/{WAKA_RANGE}"
+        f"?api_key={waka_key}"
     ).json()
 
     try:
         lang_data = data["data"]["languages"]
         start_date = data["data"]["start"]
         end_date = data["data"]["end"]
-        week_total = data["data"]["human_readable_total_including_other_language"]
     except KeyError:
         print("error: please add your WakaTime API key to the Repository Secrets")
         sys.exit(1)
 
-    lang_list = []
-    time_list = []
-    percent_list = []
+    # Longer ranges are computed lazily; the first request kicks off the job and
+    # returns a partial payload. Bail rather than commit a half-built chart.
+    if data["data"].get("status") not in (None, "ok"):
+        print(f"error: WakaTime range still {data['data'].get('status')}, try again later")
+        sys.exit(1)
 
-    for lang in lang_data[:5]:
-        lang_list.append(lang["name"])
-        time_list.append(lang["text"])
-        percent_list.append(lang["percent"])
-    data_list = [lang_list, time_list, percent_list,
-                 start_date, end_date, week_total]
-    print("coding data collected")
-    return data_list
+    languages = [
+        lang for lang in lang_data
+        if lang["name"].strip().lower() not in EXCLUDED_LANGUAGES
+    ]
+    if not languages:
+        print("error: every language was filtered out — check EXCLUDED_LANGUAGES")
+        sys.exit(1)
+
+    top = languages[:TOP_N]
+    lang_list = [lang["name"] for lang in top]
+    time_list = [lang["text"] for lang in top]
+    # Re-base the percentages on the languages actually charted, so the bars
+    # fill the axis instead of being squashed by the filtered-out formats.
+    charted_seconds = sum(lang["total_seconds"] for lang in top)
+    percent_list = [
+        lang["total_seconds"] / charted_seconds * 100 for lang in top
+    ]
+
+    dropped = len(lang_data) - len(languages)
+    print(f"coding data collected ({dropped} non-code formats filtered out)")
+    return [lang_list, time_list, percent_list,
+            start_date, end_date, humanize(charted_seconds)]
 
 
 if __name__ == "__main__":

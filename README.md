@@ -74,7 +74,7 @@ More at **[nhatvu148.dev](https://nhatvu148.dev)**.
 <img title="Python" alt="Python" width="26px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/Python-logo-notext.svg" />&nbsp;&nbsp;
 <img title="Go" alt="Go" width="30px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/go.svg" />&nbsp;&nbsp;
 <img title="React" alt="React" width="28px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/react-svgrepo-com.svg" />&nbsp;&nbsp;
-<img title="Next.js" alt="Next.js" width="25px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/nextjs.svg" />&nbsp;&nbsp;
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/nextjs-dark.svg" /><img title="Next.js" alt="Next.js" width="25px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/nextjs-light.svg" /></picture>&nbsp;&nbsp;
 <img title="Angular" alt="Angular" width="28px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/angular-svgrepo-com.svg" />&nbsp;&nbsp;
 <img title="Node.js" alt="Node.js" width="27px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/nodejs.svg" />&nbsp;&nbsp;
 <img title="Tauri" alt="Tauri" width="26px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/tauri.svg" />&nbsp;&nbsp;
@@ -84,9 +84,9 @@ More at **[nhatvu148.dev](https://nhatvu148.dev)**.
 <img title="Docker" alt="Docker" width="35px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/4844483.png" />&nbsp;&nbsp;
 </div>
 
-### This week
+### Last 30 days
 
-<img src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/stat.svg?v=20260725001832" alt="WakaTime Activity"/>
+<img src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/stat.svg?v=20260725021224" alt="WakaTime Activity"/>
 
 ---
 
