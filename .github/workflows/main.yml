@@ -1,36 +1,35 @@
-# This is a basic workflow to help you get started with Actions
-
+# Verifies the stats generator still builds and that the dependency manifests
+# agree with each other. Runs on every push and PR to master.
 name: CI
 
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
-
-  # Allows you to run this workflow manually from the Actions tab
+    branches: [master]
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  check:
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: '3.12'
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: uv.lock is in sync with pyproject.toml
+        run: uv lock --check
+
+      - name: requirements.txt agrees with uv.lock
+        # Two install paths read two different manifests: `uv run main.py`
+        # (update-stats.yml) resolves from uv.lock, while pip installs from
+        # requirements.txt. Dependabot has bumped one without the other, which
+        # silently left the stats workflow on a stale version. Catch that here.
+        run: uv run python scripts/check_manifests.py
+
+      - name: main.py compiles
+        run: uv run python -m compileall -q main.py

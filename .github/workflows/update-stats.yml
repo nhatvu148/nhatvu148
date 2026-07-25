@@ -57,6 +57,6 @@ jobs:
             ts=$(date -u +%Y%m%d%H%M%S)
             sed -i -E "s|images/stat\.svg(\?v=[0-9]+)?|images/stat.svg?v=$ts|" README.md
             git add README.md
-            git commit -m "update svg"
+            git commit -m "chore(stats): refresh WakaTime graph"
             git push origin HEAD:master
           fi
