@@ -1,3 +1,9 @@
 venv
 .env
 .vscode
+.venv
+.ropeproject
+__pycache__
+
+# Local Vexar code index — regenerated per machine, not shared state
+.vexar/
