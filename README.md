@@ -1,5 +1,3 @@
-[![wakatime](https://wakatime.com/badge/user/37f85803-060b-4faf-950b-e8a7c3f4d7e7.svg)](https://wakatime.com/@37f85803-060b-4faf-950b-e8a7c3f4d7e7)
-
 ### Hi, I'm Vu
 
 Studied aerospace, ended up building software. These days I build developer tools in Rust — and a dictionary for a script almost nobody can read anymore.

@@ -44,15 +44,29 @@ def humanize(seconds: float) -> str:
     return f"{hours} {hrs} {minutes} {mins}"
 
 
-def this_week(dates: list) -> str:
-    """Returns the chart title: the date range and total coding time."""
-    range_end = datetime.datetime.strptime(dates[4], "%Y-%m-%dT%H:%M:%SZ")
-    range_start = datetime.datetime.strptime(dates[3], "%Y-%m-%dT%H:%M:%SZ")
-    print("range header created")
-    return (
+def compose_header(data: list) -> tuple:
+    """Returns (title, subtitle) for the chart.
+
+    The title carries the charted range; the subtitle carries the figures that
+    used to live in a separate wakatime.com badge — daily average and all-time
+    total — so the graph is the single source of these numbers.
+    """
+    range_end = datetime.datetime.strptime(data[4], "%Y-%m-%dT%H:%M:%SZ")
+    range_start = datetime.datetime.strptime(data[3], "%Y-%m-%dT%H:%M:%SZ")
+    title = (
         f"{range_start.strftime('%d %B, %Y')} to {range_end.strftime('%d %B, %Y')}"
-        f" — {dates[5]} of code"
+        f" — {data[5]} of code"
     )
+
+    parts = []
+    if data[6]:
+        parts.append(f"{data[6]} daily average")
+    if data[7]:
+        parts.append(f"{data[7]} all time")
+    subtitle = "  ·  ".join(parts)
+
+    print("range header created")
+    return title, subtitle
 
 
 def make_graph(data: list):
@@ -65,8 +79,26 @@ def make_graph(data: list):
     ax.set_yticks(y_pos)
     ax.get_xaxis().set_ticks([])
     ax.set_yticklabels(data[0], color="#586069")
-    ax.set_title(this_week(data), color="#586069")
+    title, subtitle = compose_header(data)
+    # pad leaves room for the subtitle to sit between the title and the bars
+    ax.set_title(title, color="#586069", pad=22 if subtitle else 6)
+    if subtitle:
+        ax.text(
+            0.5, 1.02, subtitle,
+            transform=ax.transAxes,
+            ha="center", va="bottom",
+            color="#8b949e", fontsize=8,
+        )
     ax.invert_yaxis()
+    # Autoscaling makes the longest bar span the full axis, which pushes its
+    # duration label past the edge where it gets clipped — so the top language,
+    # the one that matters most, ends up the only bar without a number.
+    # Reserve headroom for the labels instead.
+    # Headroom scales with the longest label so it can't be truncated: the text
+    # is drawn in axis space, so a fixed multiplier fits "5 hrs" but clips
+    # "12 hrs 47 mins".
+    longest_label = max((len(t) for t in data[1]), default=0)
+    ax.set_xlim(0, max(data[2]) * (1 + 0.030 * longest_label))
     plt.box(False)
     for i, bar in enumerate(bars):
         if data[0][i] in color_data:
@@ -85,7 +117,8 @@ def make_graph(data: list):
             textcoords="offset points",
             va="center",
             ha="left",
-            color="#586069"
+            color="#586069",
+            annotation_clip=False,
         )
     plt.savefig("images/stat.svg", bbox_inches="tight", transparent=True)
     # GitHub's image proxy refuses to render SVGs that contain a DOCTYPE /
@@ -96,6 +129,30 @@ def make_graph(data: list):
     with open("images/stat.svg", "w", encoding="utf-8") as svg_file:
         svg_file.write(svg)
     print("new image generated")
+
+
+def get_all_time() -> str:
+    """All-time coding total, e.g. '6,710 hrs 12 mins'.
+
+    Fail-open: this is decoration on top of the graph, and the workflow runs
+    unattended every 6 hours. A hiccup here should cost the subtitle, not the
+    whole refresh.
+    """
+    try:
+        res = requests.get(
+            "https://wakatime.com/api/v1/users/current/all_time_since_today"
+            f"?api_key={waka_key}",
+            timeout=30,
+        ).json()["data"]
+    except Exception as err:  # noqa: BLE001 - any failure degrades the same way
+        print(f"warning: all-time total unavailable ({err}); omitting from subtitle")
+        return ""
+    # A freshly-computed range can come back partial; better no figure than a
+    # wrong one that silently understates years of history.
+    if not res.get("is_up_to_date"):
+        print("warning: all-time total not up to date; omitting from subtitle")
+        return ""
+    return res.get("text", "")
 
 
 def get_stats() -> list:
@@ -140,7 +197,9 @@ def get_stats() -> list:
     dropped = len(lang_data) - len(languages)
     print(f"coding data collected ({dropped} non-code formats filtered out)")
     return [lang_list, time_list, percent_list,
-            start_date, end_date, humanize(charted_seconds)]
+            start_date, end_date, humanize(charted_seconds),
+            data["data"].get("human_readable_daily_average", ""),
+            get_all_time()]
 
 
 if __name__ == "__main__":
