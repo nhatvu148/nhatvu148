@@ -1,44 +1,6 @@
 ### Hi, I'm Vu
 
-Studied aerospace, ended up building software. These days I build developer tools in Rust — and a dictionary for a script almost nobody can read anymore.
-
-```rust
-use ai::{agents, mcp, rag};
-use rust::{axum, tauri, tokio};
-
-#[derive(Debug, Clone, CoffeePowered)]
-pub struct Vu {
-    langs: Vec<&'static str>,
-    building: Vec<&'static str>,
-}
-
-impl Vu {
-    pub fn init() -> Self {
-        Self {
-            langs: vec!["Rust", "TypeScript", "Python", "Go"],
-            building: vec![
-                "Agentic dev tools",
-                "MCP servers & RAG",
-                "Tauri desktop apps",
-                "A Hán Nôm dictionary",
-            ],
-        }
-    }
-
-    pub fn run(&self) -> Result<(), Burnout> {
-        for project in &self.building {
-            self.build(project)?;
-            self.learn()?;
-            self.coffee()?;
-        }
-        Ok(())
-    }
-}
-
-fn main() -> Result<(), Burnout> {
-    Vu::init().run()
-}
-```
+Studied aerospace, ended up building software. These days I build developer tools in Rust — agentic coding assistants, MCP servers, AI code review — and a dictionary for a script almost nobody can read anymore.
 
 ### What I'm building
 
@@ -51,7 +13,7 @@ fn main() -> Result<(), Burnout> {
 | [rime-nom-viet](https://github.com/nhatvu148/rime-nom-viet) | RIME input schema for Vietnamese Chữ Nôm — type Telex, get Nôm. 100,000+ entries, works on desktop and mobile. |
 | [agent-loop-core](https://github.com/nhatvu148/agent-loop-core) | A hand-rolled LLM agent loop for Rust: resilient transport, typed tools, streaming events, two-model cost split. Provider-agnostic. |
 | [llm-harness-starter](https://github.com/nhatvu148/llm-harness-starter) | Clone-and-go scaffold for a grounded LLM agent — model + MCP tools + RAG + curated procedures, each swappable. |
-| [kaniscope-action](https://github.com/nhatvu148/kaniscope-action) | AI code review as a GitHub Action, powered by `pr-review-core`. |
+| [kaniscope-action](https://github.com/nhatvu148/kaniscope-action) | AI code review as a GitHub Action, powered by `pr-review-core` — on the [GitHub Marketplace](https://github.com/marketplace/actions/kaniscope-ai-code-review) (`uses: nhatvu148/kaniscope-action@v1`), with a [playground](https://kaniscope.nvnv.app). |
 
 **Products**
 
@@ -64,24 +26,6 @@ fn main() -> Result<(), Burnout> {
 
 More at **[nhatvu148.dev](https://nhatvu148.dev)**.
 
-### Things I play with
-
-<div align="center">
-<img title="Rust" alt="Rust" width="40px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/rustacean-flat-happy.svg" />&nbsp;&nbsp;
-<img title="TypeScript" alt="TypeScript" width="26px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/Typescript_logo_2020.svg" />&nbsp;&nbsp;
-<img title="Python" alt="Python" width="26px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/Python-logo-notext.svg" />&nbsp;&nbsp;
-<img title="Go" alt="Go" width="30px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/go.svg" />&nbsp;&nbsp;
-<img title="React" alt="React" width="28px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/react-svgrepo-com.svg" />&nbsp;&nbsp;
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/nextjs-dark.svg" /><img title="Next.js" alt="Next.js" width="25px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/nextjs-light.svg" /></picture>&nbsp;&nbsp;
-<img title="Angular" alt="Angular" width="28px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/angular-svgrepo-com.svg" />&nbsp;&nbsp;
-<img title="Node.js" alt="Node.js" width="27px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/nodejs.svg" />&nbsp;&nbsp;
-<img title="Tauri" alt="Tauri" width="26px" src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/tauri.svg" />&nbsp;&nbsp;
-<img title="PostgreSQL" alt="PostgreSQL" width="27px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/postgresql-icon.svg" />&nbsp;&nbsp;
-<img title="MongoDB" alt="MongoDB" width="27px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/mongo-svgrepo-com.svg" />&nbsp;&nbsp;
-<img title="Redis" alt="Redis" width="35px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/redis-logo.png" />&nbsp;&nbsp;
-<img title="Docker" alt="Docker" width="35px" src="https://cdn.jsdelivr.net/gh/nhatvu148/nhatvu148@master/images/4844483.png" />&nbsp;&nbsp;
-</div>
-
 ### Last 30 days
 
 <img src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/stat.svg?v=20260726120359" alt="WakaTime Activity"/>
@@ -91,7 +35,7 @@ More at **[nhatvu148.dev](https://nhatvu148.dev)**.
 <p align="center">
   <a href="https://nhatvu148.dev">nhatvu148.dev</a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/van-nhat-vu-nguyen/">LinkedIn</a> &nbsp;·&nbsp;
-  <a href="https://leetcode.com/nhatvu148">LeetCode</a>
+  <a href="https://www.hackerrank.com/profile/nhatvu148">HackerRank</a>
 </p>
 
-<p align="center"><sub>Open to full-stack, Rust, and AI tooling work — remote.</sub></p>
+<p align="center"><sub>Rust, full-stack, and AI tooling — remote.</sub></p>
