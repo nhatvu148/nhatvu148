@@ -28,7 +28,7 @@ More at **[nhatvu148.dev](https://nhatvu148.dev)**.
 
 ### Last 30 days
 
-<img src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/stat.svg?v=20260728123048" alt="WakaTime Activity"/>
+<img src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/stat.svg?v=20260729001531" alt="WakaTime Activity"/>
 
 ---
 
