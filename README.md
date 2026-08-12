@@ -1,6 +1,11 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/banner-dark.svg">
+  <img src="images/banner-light.svg" alt="Developer tools in Rust — agentic coding assistants, MCP servers, AI code review, and a dictionary for a script almost nobody can read anymore" width="100%">
+</picture>
+
 ### Hi, I'm Vu
 
-Studied aerospace, ended up building software. These days I build developer tools in Rust — agentic coding assistants, MCP servers, AI code review — and a dictionary for a script almost nobody can read anymore.
+Studied aerospace, ended up building software.
 
 ### What I'm building
 
