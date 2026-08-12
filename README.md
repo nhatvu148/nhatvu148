@@ -11,13 +11,13 @@ Studied aerospace, ended up building software.
 
 #### MCP servers
 
-- **[video-transcriber-mcp-rs](https://github.com/nhatvu148/video-transcriber-mcp-rs)** [![crates.io](https://img.shields.io/crates/v/video-transcriber-mcp?style=flat-square&color=2F6F6F&label=)](https://crates.io/crates/video-transcriber-mcp)<br>Video → transcript on `whisper.cpp`. 1000+ platforms, fully offline, ~6x faster than Python Whisper.
-- **[kagoni](https://github.com/nhatvu148/kagoni)** [![crates.io](https://img.shields.io/crates/v/kagoni?style=flat-square&color=2F6F6F&label=)](https://crates.io/crates/kagoni)<br>Docker MCP server built on token-bounded I/O. Logs come back as clustered digests — 13–80x fewer tokens.
-- **[x402-mcp-proxy](https://github.com/nhatvu148/x402-mcp-proxy)** [![crates.io](https://img.shields.io/crates/v/x402-mcp-proxy?style=flat-square&color=2F6F6F&label=)](https://crates.io/crates/x402-mcp-proxy)<br>Lets a walletless MCP client *pay* for tools. Holds a Solana wallet, settles USDC per call, spend-capped.
+- **[video-transcriber-mcp-rs](https://github.com/nhatvu148/video-transcriber-mcp-rs)**<br>Video → transcript on `whisper.cpp`. 1000+ platforms, fully offline, ~6x faster than Python Whisper. [crates.io](https://crates.io/crates/video-transcriber-mcp)
+- **[kagoni](https://github.com/nhatvu148/kagoni)**<br>Docker MCP server built on token-bounded I/O. Logs come back as clustered digests — 13–80x fewer tokens. [crates.io](https://crates.io/crates/kagoni)
+- **[x402-mcp-proxy](https://github.com/nhatvu148/x402-mcp-proxy)**<br>Lets a walletless MCP client *pay* for tools. Holds a Solana wallet, settles USDC per call, spend-capped. [crates.io](https://crates.io/crates/x402-mcp-proxy)
 
 #### AI code review
 
-- **[pr-review-core](https://github.com/nhatvu148/pr-review-core)** [![crates.io](https://img.shields.io/crates/v/pr-review-core?style=flat-square&color=2F6F6F&label=)](https://crates.io/crates/pr-review-core)<br>Self-hosted reviewer. Line-anchored comments on GitHub / GitLab / Bitbucket, tree-sitter context, CVE scans.
+- **[pr-review-core](https://github.com/nhatvu148/pr-review-core)**<br>Self-hosted reviewer. Line-anchored comments on GitHub / GitLab / Bitbucket, tree-sitter context, CVE scans. [crates.io](https://crates.io/crates/pr-review-core)
 - **[kaniscope-action](https://github.com/nhatvu148/kaniscope-action)**<br>The same engine as a GitHub Action, on the [Marketplace](https://github.com/marketplace/actions/kaniscope-ai-code-review) — with a [playground](https://kaniscope.nvnv.app).
 
 #### Chữ Nôm
