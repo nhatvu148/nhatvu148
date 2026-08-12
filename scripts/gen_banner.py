@@ -44,11 +44,15 @@ STROKE_DUR = 0.17    # per stroke
 STROKE_PAUSE = 0.03  # dead time between strokes, as the brush lifts
 CHAR_PAUSE = 0.18    # longer beat between characters, as the hand moves across
 LEAD_IN = 0.30       # a beat before the first mark, so it does not start mid-blink
-# Mask line width, in grid units. Too narrow and a stroke reveals as a thin
-# sliver of its true shape instead of a stroke; 180 did exactly that. A mask
-# only ever applies to its OWN stroke outline, so widening cannot leak into a
-# neighbour.
-MASK_W = 260
+# Mask line width, in grid units. A mask only ever applies to its OWN stroke
+# outline, so a wide line cannot leak into a neighbour.
+#
+# The cap MUST be butt, not round. With the dash fully offset the dash length is
+# zero, but a round cap still paints a disc of radius MASK_W/2 at the path's
+# start — so every one of the 33 strokes leaked a blob from the first frame,
+# whatever its scheduled begin time. That, not the ordering, was why the
+# animation looked like scattered fragments.
+MASK_W = 200
 
 
 def fetch(ch):
@@ -91,7 +95,7 @@ def build(theme):
                 f'<mask id="{mid}" maskUnits="userSpaceOnUse" x="-200" y="-400" '
                 f'width="1600" height="1800">'
                 f'<path d="{d}" fill="none" stroke="#fff" stroke-width="{MASK_W}" '
-                f'stroke-linecap="round" stroke-linejoin="round" '
+                f'stroke-linecap="butt" stroke-linejoin="round" '
                 f'stroke-dasharray="{length:.1f}" stroke-dashoffset="{length:.1f}">'
                 f'<animate attributeName="stroke-dashoffset" from="{length:.1f}" to="0" '
                 f'begin="{begin:.3f}s" dur="{STROKE_DUR}s" fill="freeze"/>'
