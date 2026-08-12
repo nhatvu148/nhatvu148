@@ -26,8 +26,8 @@ CHARS = "喃哪越"
 # lightness, so it still reads as the same colour rather than a second one.
 RUST = "#DEA584"
 RUST_DEEP = "#A95B2D"
-DARK = dict(bg="#0D1117", ink=RUST, ink_op="0.32", rule=RUST, h1="#E6EDF3", body="#8B949E")
-LIGHT = dict(bg="#FFFFFF", ink=RUST, ink_op="0.40", rule=RUST_DEEP, h1="#1F2328", body="#59636E")
+DARK = dict(bg="#0D1117", ink=RUST, ink_op="0.32", ghost_op="0.09", rule=RUST, h1="#E6EDF3", body="#8B949E")
+LIGHT = dict(bg="#FFFFFF", ink=RUST, ink_op="0.40", ghost_op="0.11", rule=RUST_DEEP, h1="#1F2328", body="#59636E")
 
 SIZE = 104          # rendered em size, matching the type it sits beside
 GRID = 1024         # hanzi-writer coordinate grid
@@ -109,9 +109,12 @@ def build(theme):
             )
             parts.append(f'<path d="{outline}" mask="url(#{mid})"/>')
         clock += len(glyph["strokes"]) * (STROKE_DUR + STROKE_PAUSE) + CHAR_PAUSE
+        ghost = "".join(f'<path d="{o}"/>' for o in glyph["strokes"])
         body.append(
-            f'<g transform="{tf}" fill="{theme["ink"]}" '
-            f'fill-opacity="{theme["ink_op"]}">' + "".join(parts) + "</g>"
+            f'<g transform="{tf}" fill="{theme["ink"]}">'
+            f'<g fill-opacity="{theme["ghost_op"]}">{ghost}</g>'
+            f'<g fill-opacity="{theme["ink_op"]}">' + "".join(parts) + "</g>"
+            "</g>"
         )
 
     sans = ("ui-sans-serif,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif")

@@ -39,11 +39,19 @@ jobs:
         env:
           INPUT_WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
 
+      # Release counts move whenever a tag is pushed in any of the five repos,
+      # so the strip is regenerated on the same schedule as the WakaTime graph
+      # rather than being a snapshot that quietly goes stale.
+      - name: Regenerate the shipping strip
+        run: python3 scripts/gen_shipping.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add images/stat.svg
+          git add images/stat.svg images/shipping-dark.svg images/shipping-light.svg
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
@@ -56,7 +64,8 @@ jobs:
             # param, so it kept serving a pre-push snapshot hours after this ran.
             ts=$(date -u +%Y%m%d%H%M%S)
             sed -i -E "s|images/stat\.svg(\?v=[0-9]+)?|images/stat.svg?v=$ts|" README.md
+            sed -i -E "s|images/shipping-(dark|light)\.svg(\?v=[0-9]+)?|images/shipping-\1.svg?v=$ts|g" README.md
             git add README.md
-            git commit -m "chore(stats): refresh WakaTime graph"
+            git commit -m "chore(stats): refresh graphs"
             git push origin HEAD:master
           fi
