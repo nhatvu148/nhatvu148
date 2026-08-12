@@ -1,25 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" width="1200" height="180" role="img" aria-label="Vu Nguyen — developer tools in Rust, and a script almost nobody can read anymore">
+  <style>
+    /* Every element's DEFAULT state is its FINAL state, so a stripped or
+       unsupported stylesheet leaves a correct static banner. The animation
+       only adds the arrival — it is never load-bearing.
+
+       Plays once. A looping banner on a profile is motion the reader cannot
+       turn off, which is worse than no motion at all. */
+    .rise  { animation: rise .7s cubic-bezier(.2,.7,.3,1) both; }
+    .l2    { animation-delay: .10s; }
+    .l3    { animation-delay: .18s; }
+    .mark  { animation: mark 1.5s cubic-bezier(.2,.7,.3,1) both; }
+    .rule  { animation: rule .9s cubic-bezier(.4,0,.2,1) both; transform-origin: 0 50%; }
+
+    @keyframes rise { from { opacity: 0; transform: translateY(7px); } }
+    /* The wordmark settles slowest and from furthest back — it is the thing
+       the eye should land on last. */
+    @keyframes mark { from { opacity: 0; transform: translateX(26px); } }
+    @keyframes rule { from { transform: scaleX(0); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .rise, .mark, .rule { animation: none; }
+    }
+  </style>
+
   <rect width="1200" height="180" fill="#0D1117"/>
 
   <!-- 喃哪越 Nôm Na Việt, U+5583 U+54EA U+8D8A. Set large and quiet: the script is the
        subject, not the decoration, so it sits behind the type rather than
        announcing itself. -->
-  <text x="1150" y="132" text-anchor="end"
+  <text class="mark" x="1150" y="132" text-anchor="end"
         font-family="'Noto Serif CJK SC','Songti SC','Source Han Serif',serif"
         font-size="104" fill="#2F6F6F" fill-opacity="0.30">喃哪越</text>
 
-  <text x="60" y="76"
+  <text class="rise" x="60" y="76"
         font-family="ui-sans-serif,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
         font-size="34" font-weight="600" fill="#E6EDF3" letter-spacing="-0.4">Developer tools in Rust</text>
 
-  <text x="60" y="112"
+  <text class="rise l2" x="60" y="112"
         font-family="ui-sans-serif,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
         font-size="19" fill="#8B949E">Agentic coding assistants · MCP servers · AI code review</text>
 
-  <text x="60" y="142"
+  <text class="rise l3" x="60" y="142"
         font-family="ui-sans-serif,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
         font-size="19" fill="#8B949E">— and a dictionary for a script almost nobody can read anymore</text>
 
-  <!-- Hairline, full bleed: closes the strip without boxing it in. -->
-  <rect x="0" y="177" width="1200" height="3" fill="#2F6F6F"/>
+  <!-- Hairline, full bleed: closes the strip without boxing it in. Drawn last,
+       left to right, so it reads as underlining what has just arrived. -->
+  <rect class="rule" x="0" y="177" width="1200" height="3" fill="#2F6F6F"/>
 </svg>
