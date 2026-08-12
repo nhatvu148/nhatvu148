@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/banner-dark.svg?v=2">
-  <img src="images/banner-light.svg?v=2" alt="Developer tools in Rust — agentic coding assistants, MCP servers, AI code review, and a dictionary for a script almost nobody can read anymore" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/banner-dark.svg?v=3">
+  <img src="images/banner-light.svg?v=3" alt="Developer tools in Rust — agentic coding assistants, MCP servers, AI code review, and a dictionary for a script almost nobody can read anymore" width="100%">
 </picture>
 
 ### Hi, I'm Vu
@@ -37,7 +37,7 @@ More at **[nhatvu148.dev](https://nhatvu148.dev)**.
 
 ### Last 30 days
 
-<img src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/stat.svg?v=20260812070047" alt="WakaTime Activity"/>
+<img src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/stat.svg?v=30260812070047" alt="WakaTime Activity"/>
 
 ---
 

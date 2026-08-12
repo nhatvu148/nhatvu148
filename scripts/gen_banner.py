@@ -96,8 +96,14 @@ def build(theme):
                 f'width="1600" height="1800">'
                 f'<path d="{d}" fill="none" stroke="#fff" stroke-width="{MASK_W}" '
                 f'stroke-linecap="butt" stroke-linejoin="round" '
-                f'stroke-dasharray="{length:.1f}" stroke-dashoffset="{length:.1f}">'
-                f'<animate attributeName="stroke-dashoffset" from="{length:.1f}" to="0" '
+                # dasharray, not dashoffset. Hiding via dashoffset relies on the
+                # offset exactly matching the path length the BROWSER computes;
+                # any disagreement leaves a sliver of ink showing before the
+                # stroke's turn. A zero-length dash cannot render at all, whatever
+                # the length turns out to be.
+                f'stroke-dasharray="0 {length + 8:.1f}">'
+                f'<animate attributeName="stroke-dasharray" from="0 {length + 8:.1f}" '
+                f'to="{length + 8:.1f} 0" '
                 f'begin="{begin:.3f}s" dur="{STROKE_DUR}s" fill="freeze"/>'
                 f"</path></mask>"
             )
