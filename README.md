@@ -35,7 +35,11 @@ Studied aerospace, ended up building software.
 
 More at **[nhatvu148.dev](https://nhatvu148.dev)**.
 
-### Shipping
+### Where the time goes
+
+<img src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/stat.svg?v=30260812070047" alt="WakaTime Activity"/>
+
+### And what comes out of it
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/shipping-dark.svg?v=1">
