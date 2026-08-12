@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" width="1200" height="180" role="img" aria-label="Vu Nguyen — developer tools in Rust, and a script almost nobody can read anymore">
   <rect width="1200" height="180" fill="#FFFFFF"/>
 
-  <!-- 字喃 "chữ Nôm", U+5B57 U+5583. Set large and quiet: the script is the
+  <!-- 喃哪越 Nôm Na Việt, U+5583 U+54EA U+8D8A. Set large and quiet: the script is the
        subject, not the decoration, so it sits behind the type rather than
        announcing itself. -->
   <text x="1150" y="132" text-anchor="end"
         font-family="'Noto Serif CJK SC','Songti SC','Source Han Serif',serif"
-        font-size="128" fill="#2F6F6F" fill-opacity="0.22">字喃</text>
+        font-size="104" fill="#2F6F6F" fill-opacity="0.22">喃哪越</text>
 
   <text x="60" y="76"
         font-family="ui-sans-serif,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
