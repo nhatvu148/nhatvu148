@@ -42,8 +42,8 @@ More at **[nhatvu148.dev](https://nhatvu148.dev)**.
 ### And what comes out of it
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/shipping-dark.svg?v=1">
-  <img src="images/shipping-light.svg?v=1" alt="46 releases across 5 repositories in the last 12 months" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/shipping-dark.svg?v=2">
+  <img src="images/shipping-light.svg?v=2" alt="46 releases and 1,041 downloads across 5 repositories in the last 12 months" width="100%">
 </picture>
 
 ---

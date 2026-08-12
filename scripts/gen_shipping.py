@@ -16,6 +16,17 @@ import os
 import subprocess
 import urllib.request
 
+# crates.io names, which differ from the repo names (video-transcriber-mcp-rs
+# publishes as video-transcriber-mcp). Downloads are shown in aggregate on
+# purpose: individually the newer crates are in the tens, which undersells the
+# whole, and a reader cares whether anyone is downstream at all.
+CRATES = [
+    "video-transcriber-mcp",
+    "pr-review-core",
+    "kagoni",
+    "x402-mcp-proxy",
+]
+
 REPOS = [
     "video-transcriber-mcp-rs",
     "pr-review-core",
@@ -59,7 +70,22 @@ def releases(repo):
         return [x["published_at"] for x in json.load(r)]
 
 
-def build(theme, counts, months, total):
+def downloads():
+    """Total crates.io downloads. Returns None if the API is unreachable, so a
+    network blip drops the figure rather than printing a wrong one."""
+    total = 0
+    for c in CRATES:
+        try:
+            req = urllib.request.Request(f"https://crates.io/api/v1/crates/{c}",
+                                         headers={"User-Agent": "nhatvu148-profile"})
+            with urllib.request.urlopen(req, timeout=20) as r:
+                total += json.load(r)["crate"]["downloads"]
+        except Exception:
+            return None
+    return total
+
+
+def build(theme, counts, months, total, dl):
     peak = max(counts) or 1
     plot_w = W - PAD_L - PAD_R
     plot_h = H - PAD_T - PAD_B
@@ -95,12 +121,16 @@ def build(theme, counts, months, total):
                         f'font-family="{SANS}" font-size="12" font-weight="600" '
                         f'fill="{theme["bar"]}">{n}</text>')
 
+    headline = f"{total} releases in the last 12 months"
+    if dl is not None:
+        headline += f"  ·  {dl:,} downloads"
+
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" '
-        f'role="img" aria-label="{total} releases across {len(REPOS)} repositories in the last 12 months">\n'
+        f'role="img" aria-label="{headline}, across {len(REPOS)} repositories">\n'
         f'  <rect width="{W}" height="{H}" fill="{theme["bg"]}"/>\n'
         f'  <text x="{PAD_L}" y="30" font-family="{SANS}" font-size="15" font-weight="600" '
-        f'fill="{theme["h1"]}">{total} releases in the last 12 months</text>\n'
+        f'fill="{theme["h1"]}">{headline}</text>\n'
         f'  <text x="{W - PAD_R}" y="30" text-anchor="end" font-family="{SANS}" font-size="13" '
         f'fill="{theme["dim"]}">{len(REPOS)} repositories</text>\n'
         f'  <line x1="{PAD_L}" y1="{PAD_T + plot_h:.0f}" x2="{W - PAD_R}" y2="{PAD_T + plot_h:.0f}" '
@@ -128,9 +158,12 @@ def main(out_dir):
     counts = [per.get(m, 0) for m in months]
     total = sum(counts)
 
+    dl = downloads()
     for name, theme in (("dark", DARK), ("light", LIGHT)):
-        open(os.path.join(out_dir, f"shipping-{name}.svg"), "w").write(build(theme, counts, months, total))
-    print(f"  {total} releases across {len(REPOS)} repos → shipping-{{dark,light}}.svg")
+        open(os.path.join(out_dir, f"shipping-{name}.svg"), "w").write(
+            build(theme, counts, months, total, dl))
+    print(f"  {total} releases, {dl if dl is not None else 'downloads unavailable'} "
+          f"downloads → shipping-{{dark,light}}.svg")
 
 
 if __name__ == "__main__":
