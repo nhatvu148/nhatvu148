@@ -14,6 +14,7 @@ Studied aerospace, ended up building software. These days I build developer tool
 | [rime-nom-viet](https://github.com/nomnaviet/rime-nom-viet) | RIME input schema for Vietnamese Chữ Nôm — type Telex, get Nôm. 100,000+ entries, works on desktop and mobile. |
 | [agent-loop-core](https://github.com/nhatvu148/agent-loop-core) | A hand-rolled LLM agent loop for Rust: resilient transport, typed tools, streaming events, two-model cost split. Provider-agnostic. |
 | [llm-harness-starter](https://github.com/nhatvu148/llm-harness-starter) | Clone-and-go scaffold for a grounded LLM agent — model + MCP tools + RAG + curated procedures, each swappable. |
+| [x402-mcp-proxy](https://github.com/nhatvu148/x402-mcp-proxy) | Lets a walletless MCP client pay for tools. Sits between the client and an x402-gated server, holds a Solana wallet, and settles USDC per call — with a spend cap so a retry loop can't drain it. [`crates.io`](https://crates.io/crates/x402-mcp-proxy) |
 | [kaniscope-action](https://github.com/nhatvu148/kaniscope-action) | AI code review as a GitHub Action, powered by `pr-review-core` — on the [GitHub Marketplace](https://github.com/marketplace/actions/kaniscope-ai-code-review) (`uses: nhatvu148/kaniscope-action@v1`), with a [playground](https://kaniscope.nvnv.app). |
 
 **Products**
