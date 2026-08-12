@@ -37,11 +37,12 @@ RIGHT = 1150        # right edge, as the old right-anchored <text>
 
 # Roughly half speed. At 0.22s a stroke the hand looked hurried and the eye
 # could not follow the order, which is the only reason to draw strokes at all.
-STROKE_DUR = 0.38    # per stroke
+STROKE_DUR = 0.17    # per stroke
 # Strictly sequential. An earlier version OVERLAPPED strokes (begin advanced by
 # DUR - GAP) to make it "read as one hand" — but a hand writes one stroke at a
 # time, and the overlap destroyed the very order the animation exists to show.
-STROKE_PAUSE = 0.05  # dead time between strokes, as the brush lifts
+STROKE_PAUSE = 0.03  # dead time between strokes, as the brush lifts
+CHAR_PAUSE = 0.18    # longer beat between characters, as the hand moves across
 LEAD_IN = 0.30       # a beat before the first mark, so it does not start mid-blink
 # Mask line width, in grid units. Too narrow and a stroke reveals as a thin
 # sliver of its true shape instead of a stroke; 180 did exactly that. A mask
@@ -75,6 +76,7 @@ def build(theme):
     x0 = RIGHT - SIZE * len(CHARS)
 
     defs, body = [], []
+    clock = LEAD_IN          # advances across the whole line, not per character
     for ci, glyph in enumerate(data):
         gx = x0 + ci * SIZE
         # translate into place, flip the y-axis, then drop the glyph's top edge
@@ -84,7 +86,7 @@ def build(theme):
         for si, (outline, med) in enumerate(zip(glyph["strokes"], glyph["medians"])):
             mid = f"m{ci}_{si}"
             d, length = median_path(med)
-            begin = LEAD_IN + si * (STROKE_DUR + STROKE_PAUSE)
+            begin = clock + si * (STROKE_DUR + STROKE_PAUSE)
             defs.append(
                 f'<mask id="{mid}" maskUnits="userSpaceOnUse" x="-200" y="-400" '
                 f'width="1600" height="1800">'
@@ -96,6 +98,7 @@ def build(theme):
                 f"</path></mask>"
             )
             parts.append(f'<path d="{outline}" mask="url(#{mid})"/>')
+        clock += len(glyph["strokes"]) * (STROKE_DUR + STROKE_PAUSE) + CHAR_PAUSE
         body.append(
             f'<g transform="{tf}" fill="{theme["ink"]}" '
             f'fill-opacity="{theme["ink_op"]}">' + "".join(parts) + "</g>"
@@ -118,7 +121,7 @@ def build(theme):
         for y, fs, fw, fill, label, b in lines
     )
 
-    total = LEAD_IN + max(len(g["strokes"]) for g in data) * (STROKE_DUR + STROKE_PAUSE)
+    total = clock - CHAR_PAUSE + STROKE_DUR
     rule = (
         f'<rect x="0" y="177" width="1200" height="3" fill="{theme["rule"]}">'
         f'<animateTransform attributeName="transform" type="scale" from="0 1" to="1 1" '
