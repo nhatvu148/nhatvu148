@@ -87,3 +87,8 @@ tasks:
     desc: Echo the provided argument or default string, ex, task test -- "This is a test"
     cmds:
       - echo {{.CLI_ARGS | default "defaultstring"}}
+
+  banner:
+    desc: Regenerate the README banner SVGs (stroke-order 喃哪越) into images/
+    cmds:
+      - "{{.GLOBAL_PYTHON}} scripts/gen_banner.py"
