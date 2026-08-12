@@ -44,8 +44,11 @@ RUST_DEEP = "#A95B2D"
 DARK = dict(bg="#0D1117", bar=RUST, dim="#8B949E", h1="#E6EDF3", grid="#21262D")
 LIGHT = dict(bg="#FFFFFF", bar=RUST_DEEP, dim="#59636E", h1="#1F2328", grid="#E4E7EB")
 
-W, H = 1200, 150
-PAD_L, PAD_R, PAD_T, PAD_B = 60, 60, 52, 34
+# Sized to sit beside the WakaTime chart without looking like its footnote.
+# At 150px with 11px labels it read as a caption next to a headline, when the
+# releases and downloads are the stronger content of the two.
+W, H = 1200, 230
+PAD_L, PAD_R, PAD_T, PAD_B = 60, 60, 74, 44
 
 
 def releases(repo):
@@ -90,18 +93,18 @@ def build(theme, counts, months, total, dl):
     plot_w = W - PAD_L - PAD_R
     plot_h = H - PAD_T - PAD_B
     slot = plot_w / len(months)
-    bar_w = min(slot * 0.55, 26)
+    bar_w = min(slot * 0.62, 44)
 
     bars = []
     for i, (m, n) in enumerate(zip(months, counts)):
         x = PAD_L + slot * i + (slot - bar_w) / 2
-        h = 0 if n == 0 else max(3, plot_h * n / peak)
+        h = 0 if n == 0 else max(10, plot_h * n / peak)
         y = PAD_T + plot_h - h
         # A month with nothing shipped gets a baseline tick rather than nothing,
         # so the gap reads as measured rather than as missing data.
         if n == 0:
-            bars.append(f'<rect x="{x:.1f}" y="{PAD_T + plot_h - 2:.1f}" width="{bar_w:.1f}" '
-                        f'height="2" fill="{theme["grid"]}"/>')
+            bars.append(f'<rect x="{x:.1f}" y="{PAD_T + plot_h - 3:.1f}" width="{bar_w:.1f}" '
+                        f'height="3" fill="{theme["grid"]}"/>')
         else:
             bars.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{bar_w:.1f}" height="{h:.1f}" '
                         f'rx="1.5" fill="{theme["bar"]}">'
@@ -113,12 +116,11 @@ def build(theme, counts, months, total, dl):
                         f'keyTimes="0;1" keySplines="0.2 0.7 0.3 1"/></rect>')
         # Label only the peak and the two ends — a label under every bar is
         # noise at this size.
-        if n == peak or i in (0, len(months) - 1):
-            bars.append(f'<text x="{x + bar_w / 2:.1f}" y="{H - PAD_B + 18:.0f}" text-anchor="middle" '
-                        f'font-family="{SANS}" font-size="11" fill="{theme["dim"]}">{m[5:]}/{m[2:4]}</text>')
-        if n == peak:
-            bars.append(f'<text x="{x + bar_w / 2:.1f}" y="{y - 6:.1f}" text-anchor="middle" '
-                        f'font-family="{SANS}" font-size="12" font-weight="600" '
+        bars.append(f'<text x="{x + bar_w / 2:.1f}" y="{H - PAD_B + 22:.0f}" text-anchor="middle" '
+                    f'font-family="{SANS}" font-size="13" fill="{theme["dim"]}">{m[5:]}/{m[2:4]}</text>')
+        if n:
+            bars.append(f'<text x="{x + bar_w / 2:.1f}" y="{y - 9:.1f}" text-anchor="middle" '
+                        f'font-family="{SANS}" font-size="15" font-weight="600" '
                         f'fill="{theme["bar"]}">{n}</text>')
 
     headline = f"{total} releases in the last 12 months"
@@ -129,9 +131,9 @@ def build(theme, counts, months, total, dl):
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" '
         f'role="img" aria-label="{headline}, across {len(REPOS)} repositories">\n'
         f'  <rect width="{W}" height="{H}" fill="{theme["bg"]}"/>\n'
-        f'  <text x="{PAD_L}" y="30" font-family="{SANS}" font-size="15" font-weight="600" '
+        f'  <text x="{PAD_L}" y="38" font-family="{SANS}" font-size="21" font-weight="600" '
         f'fill="{theme["h1"]}">{headline}</text>\n'
-        f'  <text x="{W - PAD_R}" y="30" text-anchor="end" font-family="{SANS}" font-size="13" '
+        f'  <text x="{W - PAD_R}" y="38" text-anchor="end" font-family="{SANS}" font-size="15" '
         f'fill="{theme["dim"]}">{len(REPOS)} repositories</text>\n'
         f'  <line x1="{PAD_L}" y1="{PAD_T + plot_h:.0f}" x2="{W - PAD_R}" y2="{PAD_T + plot_h:.0f}" '
         f'stroke="{theme["grid"]}" stroke-width="1"/>\n  '
