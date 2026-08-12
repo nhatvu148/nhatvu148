@@ -4,27 +4,29 @@ Studied aerospace, ended up building software. These days I build developer tool
 
 ### What I'm building
 
-**Open source**
+#### MCP servers
 
-| Project | What it does |
-| --- | --- |
-| [video-transcriber-mcp-rs](https://github.com/nhatvu148/video-transcriber-mcp-rs) | MCP server on `whisper.cpp` — transcribes video from 1000+ platforms, 90+ languages, fully offline. ~6x faster than Python Whisper. [`crates.io`](https://crates.io/crates/video-transcriber-mcp) |
-| [pr-review-core](https://github.com/nhatvu148/pr-review-core) | Self-hosted AI PR reviewer. Line-anchored inline comments on GitHub / GitLab / Bitbucket, tree-sitter structural context, OSV.dev CVE scans. [`crates.io`](https://crates.io/crates/pr-review-core) |
-| [kagoni](https://github.com/nhatvu148/kagoni) | Docker MCP server built around token-bounded I/O — logs come back as clustered digests (13x fewer tokens on a fleet check, 80x on repetitive logs), destructive writes are gated, and `--read-only` removes write tools rather than refusing them. Drives Docker, OrbStack, Podman or Colima. [`crates.io`](https://crates.io/crates/kagoni) |
-| [rime-nom-viet](https://github.com/nomnaviet/rime-nom-viet) | RIME input schema for Vietnamese Chữ Nôm — type Telex, get Nôm. 100,000+ entries, works on desktop and mobile. |
-| [agent-loop-core](https://github.com/nhatvu148/agent-loop-core) | A hand-rolled LLM agent loop for Rust: resilient transport, typed tools, streaming events, two-model cost split. Provider-agnostic. |
-| [llm-harness-starter](https://github.com/nhatvu148/llm-harness-starter) | Clone-and-go scaffold for a grounded LLM agent — model + MCP tools + RAG + curated procedures, each swappable. |
-| [x402-mcp-proxy](https://github.com/nhatvu148/x402-mcp-proxy) | Lets a walletless MCP client pay for tools. Sits between the client and an x402-gated server, holds a Solana wallet, and settles USDC per call — with a spend cap so a retry loop can't drain it. [`crates.io`](https://crates.io/crates/x402-mcp-proxy) |
-| [kaniscope-action](https://github.com/nhatvu148/kaniscope-action) | AI code review as a GitHub Action, powered by `pr-review-core` — on the [GitHub Marketplace](https://github.com/marketplace/actions/kaniscope-ai-code-review) (`uses: nhatvu148/kaniscope-action@v1`), with a [playground](https://kaniscope.nvnv.app). |
+- **[video-transcriber-mcp-rs](https://github.com/nhatvu148/video-transcriber-mcp-rs)** [![crates.io](https://img.shields.io/crates/v/video-transcriber-mcp?style=flat-square&color=2F6F6F&label=)](https://crates.io/crates/video-transcriber-mcp)<br>Video → transcript on `whisper.cpp`. 1000+ platforms, fully offline, ~6x faster than Python Whisper.
+- **[kagoni](https://github.com/nhatvu148/kagoni)** [![crates.io](https://img.shields.io/crates/v/kagoni?style=flat-square&color=2F6F6F&label=)](https://crates.io/crates/kagoni)<br>Docker MCP server built on token-bounded I/O. Logs come back as clustered digests — 13–80x fewer tokens.
+- **[x402-mcp-proxy](https://github.com/nhatvu148/x402-mcp-proxy)** [![crates.io](https://img.shields.io/crates/v/x402-mcp-proxy?style=flat-square&color=2F6F6F&label=)](https://crates.io/crates/x402-mcp-proxy)<br>Lets a walletless MCP client *pay* for tools. Holds a Solana wallet, settles USDC per call, spend-capped.
 
-**Products**
+#### AI code review
 
-| Project | What it does |
-| --- | --- |
-| [Vexar](https://nhatvu148.dev/#projects) | Agentic coding assistant in Rust — autonomous multi-step tasks over a semantically indexed codebase. Tauri desktop + CLI sharing ~90% of the code. |
-| [Nôm Na Việt](https://nomnaviet.com) | Hán Nôm dictionary: 27,900+ characters across 31 classical texts, eight lookup methods including handwriting recognition and manuscript OCR — in-house PyTorch models at 96.6% top-1 on real woodblock crops. Ships native **iOS and Android system keyboards**: type Telex → Chữ Nôm in any app, offline. |
-| [Whisgram](https://whisgram.nvnv.app) | Turns video into study notes — summaries, concept diagrams, flashcards, timestamped transcripts. Chrome extension + web app. |
-| [SIMCEL](https://simcel.io) | Day job: supply chain digital twin for Fortune 500s. Simulates promotions, disruptions, and market shifts. |
+- **[pr-review-core](https://github.com/nhatvu148/pr-review-core)** [![crates.io](https://img.shields.io/crates/v/pr-review-core?style=flat-square&color=2F6F6F&label=)](https://crates.io/crates/pr-review-core)<br>Self-hosted reviewer. Line-anchored comments on GitHub / GitLab / Bitbucket, tree-sitter context, CVE scans.
+- **[kaniscope-action](https://github.com/nhatvu148/kaniscope-action)**<br>The same engine as a GitHub Action, on the [Marketplace](https://github.com/marketplace/actions/kaniscope-ai-code-review) — with a [playground](https://kaniscope.nvnv.app).
+
+#### Chữ Nôm
+
+- **[Nôm Na Việt](https://nomnaviet.com)**<br>Hán Nôm dictionary: 27,900+ characters, handwriting recognition and manuscript OCR at 96.6% top-1. Native iOS + Android keyboards.
+- **[rime-nom-viet](https://github.com/nomnaviet/rime-nom-viet)**<br>RIME input schema — type Telex, get Nôm. 100,000+ entries.
+
+---
+
+### Products
+
+- **[Vexar](https://nhatvu148.dev/#projects)**<br>Agentic coding assistant in Rust. Autonomous multi-step tasks over a semantically indexed codebase; desktop and CLI share ~90% of the code.
+- **[Whisgram](https://whisgram.nvnv.app)**<br>Video → study notes: summaries, concept diagrams, flashcards. Chrome extension + web app. Agents can pay for it directly over x402.
+- **[SIMCEL](https://simcel.io)**<br>Day job: supply chain digital twin for Fortune 500s. Simulates promotions, disruptions, and market shifts.
 
 More at **[nhatvu148.dev](https://nhatvu148.dev)**.
 
