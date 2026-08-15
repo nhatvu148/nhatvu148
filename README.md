@@ -29,7 +29,7 @@ Studied aerospace, ended up building software.
 
 ### Products
 
-- **[Vexar](https://nhatvu148.dev/#projects)**<br>Agentic coding assistant in Rust. Autonomous multi-step tasks over a semantically indexed codebase; desktop and CLI share ~90% of the code.
+- **[Vexar](https://nhatvu148.dev/#projects)**<br>Multi-agent cockpit in Rust. Run `claude`, `gemini` or `codex` in parallel, each isolated in its own git worktree, and review and merge from one screen.
 - **[Whisgram](https://whisgram.nvnv.app)**<br>Video → study notes: summaries, concept diagrams, flashcards. Chrome extension + web app. Agents can pay for it directly over x402.
 - **[SIMCEL](https://simcel.io)**<br>Day job: supply chain digital twin for Fortune 500s. Simulates promotions, disruptions, and market shifts.
 
