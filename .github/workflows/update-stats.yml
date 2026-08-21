@@ -64,7 +64,7 @@ jobs:
             # param, so it kept serving a pre-push snapshot hours after this ran.
             ts=$(date -u +%Y%m%d%H%M%S)
             sed -i -E "s|images/stat\.svg(\?v=[0-9]+)?|images/stat.svg?v=$ts|" README.md
-            sed -i -E "s|images/shipping-(dark|light)\.svg(\?v=[0-9]+)?|images/shipping-\1.svg?v=$ts|g" README.md
+            sed -i -E "s#images/shipping-(dark|light)\.svg(\?v=[0-9]+)?#images/shipping-\1.svg?v=$ts#g" README.md
             git add README.md
             git commit -m "chore(stats): refresh graphs"
             git push origin HEAD:master
