@@ -14,6 +14,7 @@ Studied aerospace, ended up building software.
 - **[video-transcriber-mcp-rs](https://github.com/nhatvu148/video-transcriber-mcp-rs)**<br>Video → transcript on `whisper.cpp`. 1000+ platforms, fully offline, ~6x faster than Python Whisper. [crates.io](https://crates.io/crates/video-transcriber-mcp)
 - **[kagoni](https://github.com/nhatvu148/kagoni)**<br>Docker MCP server built on token-bounded I/O. Logs come back as clustered digests — 13–80x fewer tokens. [crates.io](https://crates.io/crates/kagoni)
 - **[x402-mcp-proxy](https://github.com/nhatvu148/x402-mcp-proxy)**<br>Lets a walletless MCP client *pay* for tools. Holds a Solana wallet, settles USDC per call, spend-capped. [crates.io](https://crates.io/crates/x402-mcp-proxy)
+- **[wincrust](https://github.com/nhatvu148/wincrust)**<br>Drives a Windows desktop over UI Automation, not screenshots. One 7 MB binary running elevated, where the Python equivalent loads 200 modules. [crates.io](https://crates.io/crates/wincrust)
 
 #### AI code review
 
