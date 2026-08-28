@@ -25,6 +25,7 @@ CRATES = [
     "pr-review-core",
     "kagoni",
     "x402-mcp-proxy",
+    "wincrust",
 ]
 
 REPOS = [
@@ -33,6 +34,7 @@ REPOS = [
     "kagoni",
     "x402-mcp-proxy",
     "kaniscope-action",
+    "wincrust",
 ]
 OWNER = "nhatvu148"
 MONTHS = 12
