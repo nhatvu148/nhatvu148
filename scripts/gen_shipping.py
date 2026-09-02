@@ -13,6 +13,7 @@ import collections
 import datetime
 import json
 import os
+import re
 import subprocess
 import urllib.request
 
@@ -38,6 +39,7 @@ REPOS = [
 ]
 OWNER = "nhatvu148"
 MONTHS = 12
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Same tokens as the banner, so the two read as one system rather than two
 # decisions. See scripts/gen_banner.py.
@@ -91,6 +93,11 @@ def downloads():
 
 
 def build(theme, counts, months, total, dl):
+    # The last slot is the month we are standing in. It is a partial count by
+    # definition, so it is drawn muted and captioned "so far" — otherwise the
+    # first days of every month render exactly like a month where nothing
+    # shipped, and the newest column reads as "he stopped".
+    partial = len(months) - 1
     peak = max(counts) or 1
     plot_w = W - PAD_L - PAD_R
     plot_h = H - PAD_T - PAD_B
@@ -108,8 +115,9 @@ def build(theme, counts, months, total, dl):
             bars.append(f'<rect x="{x:.1f}" y="{PAD_T + plot_h - 3:.1f}" width="{bar_w:.1f}" '
                         f'height="3" fill="{theme["grid"]}"/>')
         else:
+            fade = ' fill-opacity="0.55"' if i == partial else ''
             bars.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{bar_w:.1f}" height="{h:.1f}" '
-                        f'rx="1.5" fill="{theme["bar"]}">'
+                        f'rx="1.5" fill="{theme["bar"]}"{fade}>'
                         f'<animate attributeName="height" from="0" to="{h:.1f}" '
                         f'begin="{0.05 * i:.2f}s" dur="0.5s" fill="freeze" calcMode="spline" '
                         f'keyTimes="0;1" keySplines="0.2 0.7 0.3 1"/>'
@@ -120,10 +128,15 @@ def build(theme, counts, months, total, dl):
         # noise at this size.
         bars.append(f'<text x="{x + bar_w / 2:.1f}" y="{H - PAD_B + 22:.0f}" text-anchor="middle" '
                     f'font-family="{SANS}" font-size="13" fill="{theme["dim"]}">{m[5:]}/{m[2:4]}</text>')
+        if i == partial:
+            bars.append(f'<text x="{x + bar_w / 2:.1f}" y="{H - PAD_B + 35:.0f}" text-anchor="middle" '
+                        f'font-family="{SANS}" font-size="11" fill="{theme["dim"]}" '
+                        f'fill-opacity="0.8">so far</text>')
         if n:
+            fade = ' fill-opacity="0.7"' if i == partial else ''
             bars.append(f'<text x="{x + bar_w / 2:.1f}" y="{y - 9:.1f}" text-anchor="middle" '
                         f'font-family="{SANS}" font-size="15" font-weight="600" '
-                        f'fill="{theme["bar"]}">{n}</text>')
+                        f'fill="{theme["bar"]}"{fade}>{n}</text>')
 
     headline = f"{total} releases in the last 12 months"
     if dl is not None:
@@ -131,7 +144,8 @@ def build(theme, counts, months, total, dl):
 
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" '
-        f'role="img" aria-label="{headline}, across {len(REPOS)} repositories">\n'
+        f'role="img" aria-label="{headline}, across {len(REPOS)} repositories. '
+        f'{months[partial][5:]}/{months[partial][2:4]} is the current month and still in progress.">\n'
         f'  <rect width="{W}" height="{H}" fill="{theme["bg"]}"/>\n'
         f'  <text x="{PAD_L}" y="38" font-family="{SANS}" font-size="21" font-weight="600" '
         f'fill="{theme["h1"]}">{headline}</text>\n'
@@ -144,6 +158,28 @@ def build(theme, counts, months, total, dl):
 
 
 SANS = "ui-sans-serif,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
+
+
+def update_alt(readme, total, dl):
+    """Rewrite the shipping image's alt text in README.md.
+
+    The workflow bumps the ?v= cache-buster on every refresh but used to leave
+    the alt text alone, so the numbers a screen reader got drifted months
+    behind the numbers in the picture. The alt text is generated from the same
+    counts as the SVG for that reason — nothing here is hand-maintained.
+    """
+    try:
+        md = open(readme).read()
+    except FileNotFoundError:
+        return
+    alt = f"{total} releases"
+    if dl is not None:
+        alt += f" and {dl:,} downloads"
+    alt += f" across {len(REPOS)} repositories in the last 12 months"
+    out = re.sub(r'(<img src="images/shipping-light\.svg[^"]*" alt=")[^"]*(")',
+                 lambda m: m.group(1) + alt + m.group(2), md, count=1)
+    if out != md:
+        open(readme, "w").write(out)
 
 
 def main(out_dir):
@@ -166,6 +202,7 @@ def main(out_dir):
     for name, theme in (("dark", DARK), ("light", LIGHT)):
         open(os.path.join(out_dir, f"shipping-{name}.svg"), "w").write(
             build(theme, counts, months, total, dl))
+    update_alt(os.path.join(ROOT, "README.md"), total, dl)
     print(f"  {total} releases, {dl if dl is not None else 'downloads unavailable'} "
           f"downloads → shipping-{{dark,light}}.svg")
 
