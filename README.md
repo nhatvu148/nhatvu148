@@ -38,13 +38,13 @@ More at **[nhatvu148.dev](https://nhatvu148.dev)**.
 
 ### Where the time goes
 
-<img src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/stat.svg?v=20260905140149" alt="WakaTime Activity"/>
+<img src="https://raw.githubusercontent.com/nhatvu148/nhatvu148/master/images/stat.svg?v=20260906012329" alt="WakaTime Activity"/>
 
 ### And what comes out of it
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/shipping-dark.svg?v=20260905140149">
-  <img src="images/shipping-light.svg?v=20260905140149" alt="71 releases and 1,711 downloads across 6 repositories in the last 12 months" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/shipping-dark.svg?v=20260906012329">
+  <img src="images/shipping-light.svg?v=20260906012329" alt="72 releases and 1,735 downloads across 6 repositories in the last 12 months" width="100%">
 </picture>
 
 ---
